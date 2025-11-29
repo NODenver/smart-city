@@ -88,7 +88,8 @@
                   start-placeholder="开始时间"
                   end-placeholder="结束时间"
                   style="width: 100%;"
-                  :default-time="['00:00:00', '23:59:59']"
+                  format="YYYY-MM-DD HH:mm:ss"
+                  value-format="YYYY-MM-DD HH:mm:ss"
                 />
               </div>
             </div>
@@ -164,7 +165,8 @@
                     start-placeholder="开始时间"
                     end-placeholder="结束时间"
                     style="width: 100%;"
-                    :default-time="['00:00:00', '23:59:59']"
+                    format="YYYY-MM-DD HH:mm:ss"
+                    value-format="YYYY-MM-DD HH:mm:ss"
                   />
                 </div>
                 <div class="form-group">
@@ -206,7 +208,8 @@
                     start-placeholder="开始时间"
                     end-placeholder="结束时间"
                     style="width: 100%;"
-                    :default-time="['00:00:00', '23:59:59']"
+                    format="YYYY-MM-DD HH:mm:ss"
+                    value-format="YYYY-MM-DD HH:mm:ss"
                   />
                 </div>
                 <div class="form-group">
@@ -980,6 +983,43 @@ const getTrendText = (change: number) => {
 
 .filter-section :deep(.el-date-table th) {
   color: var(--text-muted) !important;
+}
+
+/* 日期选择器底部按钮 */
+.filter-section :deep(.el-picker-panel__footer) {
+  background: var(--background-mute) !important;
+  border-top: 1px solid var(--border-color) !important;
+  padding: 8px !important;
+}
+
+.filter-section :deep(.el-picker-panel__link-btn) {
+  color: var(--primary-color) !important;
+  font-weight: 500 !important;
+}
+
+.filter-section :deep(.el-picker-panel__link-btn:hover) {
+  color: var(--primary-light) !important;
+}
+
+.filter-section :deep(.el-picker-panel__footer .el-button) {
+  background: var(--background-elevated) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-secondary) !important;
+}
+
+.filter-section :deep(.el-picker-panel__footer .el-button:hover) {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.filter-section :deep(.el-picker-panel__footer .el-button--primary) {
+  background: var(--gradient-primary) !important;
+  border: none !important;
+  color: white !important;
+}
+
+.filter-section :deep(.el-picker-panel__footer .el-button--primary:hover) {
+  opacity: 0.9;
 }
 
 </style>
