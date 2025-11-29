@@ -1,5 +1,5 @@
 <template>
-  <div class="dashboard-container">
+  <div class="dashboard-container dashboard-view">
     <!-- 左中右布局 -->
     <el-row :gutter="15" class="main-layout">
       <!-- 左侧：指标和统计 -->
@@ -99,7 +99,7 @@
       <!-- 右侧：图表垂直分布 -->
       <el-col :span="6" class="right-panel">
         <!-- 近7天问题趋势分析 -->
-        <el-card class="chart-card full-width">
+        <el-card class="chart-card fixed-height">
           <template #header>
             <span>近7天问题趋势分析</span>
           </template>
@@ -107,7 +107,7 @@
         </el-card>
 
         <!-- 问题类型分布 -->
-        <el-card class="chart-card full-width">
+        <el-card class="chart-card fixed-height">
           <template #header>
             <span>问题类型分布</span>
           </template>
@@ -115,15 +115,15 @@
         </el-card>
 
         <!-- 24小时分布 -->
-        <el-card class="chart-card full-width">
+        <el-card class="chart-card fixed-height chart-hour-card">
           <template #header>
             <span>24小时问题分布</span>
           </template>
-          <div ref="hourChartRef" class="chart-medium"></div>
+          <div ref="hourChartRef" class="chart-medium chart-hour"></div>
         </el-card>
 
-        <!-- 实时事件列表 -->
-        <el-card class="event-card">
+        <!-- 实时事件列表 - 限制高度 -->
+        <el-card class="event-card limited-height">
           <template #header>
             <div class="event-header">
               <span>实时事件流</span>
@@ -659,6 +659,14 @@ function initHourChart() {
     return Math.floor(baseCount * hourFactor);
   });
 
+  // 为x轴标签设置间隔显示，避免拥挤
+  const xAxisLabels = Array.from({ length: 24 }, (_, i) => {
+    if (i % 3 === 0) {
+      return `${i}:00`; // 每3小时显示一次
+    }
+    return ''; // 其他时间不显示
+  });
+
   const option: echarts.EChartsOption = {
     tooltip: {
       trigger: 'axis',
@@ -673,15 +681,15 @@ function initHourChart() {
       }
     },
     grid: {
-      left: '10%',
-      right: '10%',
-      top: '15%',
-      bottom: '15%',
+      left: '8%',
+      right: '8%',
+      top: '25%',
+      bottom: '25%',
       containLabel: true
     },
     xAxis: {
       type: 'category',
-      data: Array.from({ length: 24 }, (_, i) => `${i}:00`),
+      data: xAxisLabels,
       axisLine: {
         lineStyle: {
           color: 'rgba(0, 229, 255, 0.3)'
@@ -689,7 +697,12 @@ function initHourChart() {
       },
       axisLabel: {
         color: '#e5e7eb',
-        fontSize: 10
+        fontSize: 11,
+        interval: 0,
+        margin: 15
+      },
+      axisTick: {
+        show: false
       }
     },
     yAxis: {
@@ -701,7 +714,8 @@ function initHourChart() {
       },
       axisLabel: {
         color: '#e5e7eb',
-        fontSize: 10
+        fontSize: 10,
+        margin: 10
       },
       splitLine: {
         lineStyle: {
@@ -721,16 +735,25 @@ function initHourChart() {
             ])
           }
         })),
-        barWidth: '60%',
+        barWidth: '50%',
         label: {
           show: true,
           position: 'top',
           color: '#fff',
-          fontSize: 10,
-          fontWeight: 'bold'
+          fontSize: 9,
+          fontWeight: 'bold',
+          formatter: '{c}'
         },
         itemStyle: {
-          borderRadius: [4, 4, 0, 0]
+          borderRadius: [3, 3, 0, 0]
+        },
+        emphasis: {
+          itemStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+              { offset: 0, color: '#7b2ff7' },
+              { offset: 1, color: '#00e5ff' }
+            ])
+          }
         }
       }
     ]
@@ -1152,8 +1175,9 @@ onUnmounted(() => {
 <style scoped>
 /* ==================== 全局容器 ==================== */
 .dashboard-container {
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
   padding: 15px;
+  height: calc(100vh - 100px);
   background:
     radial-gradient(ellipse at top left, rgba(0, 229, 255, 0.15) 0%, transparent 50%),
     radial-gradient(ellipse at top right, rgba(123, 47, 247, 0.15) 0%, transparent 50%),
@@ -1161,6 +1185,8 @@ onUnmounted(() => {
     linear-gradient(180deg, #0a0e27 0%, #0f1729 50%, #0a0e27 100%);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /* 动态网格背景 */
@@ -1224,10 +1250,11 @@ onUnmounted(() => {
 }
 
 .main-layout {
-  height: calc(100vh - 80px);
+  flex: 1;
   gap: 15px;
   display: flex;
   flex-wrap: nowrap;
+  min-height: 0;
 }
 
 /* ==================== 左侧面板 ==================== */
@@ -1236,6 +1263,7 @@ onUnmounted(() => {
   flex-direction: column;
   gap: 12px;
   height: 100%;
+  min-height: 0;
   padding-right: 5px;
 }
 
@@ -1569,6 +1597,7 @@ onUnmounted(() => {
   flex-direction: column;
   gap: 12px;
   height: 100%;
+  min-height: 0;
 }
 
 .heatmap-card {
@@ -1727,6 +1756,7 @@ onUnmounted(() => {
   gap: 12px;
   height: 100%;
   padding-right: 5px;
+  overflow: hidden;
 }
 
 .chart-card {
@@ -1742,6 +1772,24 @@ onUnmounted(() => {
     0 6px 24px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
   position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+/* 24小时分布图表需要额外的高度 */
+.chart-hour-card {
+  height: 220px;
+}
+
+/* 为特定图表设置不同高度 */
+.chart-hour {
+  height: 150px;
+}
+
+/* 为24小时图表设置更高的容器 */
+.chart-hour-card :deep(.el-card__body) {
+  height: 170px;
+  padding: 10px;
   overflow: hidden;
 }
 
@@ -1789,12 +1837,71 @@ onUnmounted(() => {
 
 .chart-medium {
   width: 100%;
-  height: 180px;
-  min-height: 180px;
+  height: 130px;
+  min-height: 130px;
+  max-height: 130px;
 }
 
-.full-width {
+/* 确保图表卡片的body高度固定 */
+.fixed-height :deep(.el-card__body) {
+  height: 150px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.fixed-height {
   width: 100%;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.limited-height {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  max-height: 380px;
+  height: 320px;
+  background: linear-gradient(135deg, rgba(10, 14, 39, 0.95) 0%, rgba(15, 23, 41, 0.9) 100%) !important;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(123, 47, 247, 0.4) !important;
+  border-radius: 12px !important;
+  box-shadow:
+    0 0 25px rgba(123, 47, 247, 0.2),
+    0 6px 24px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.limited-height::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at top right, rgba(123, 47, 247, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at bottom left, rgba(0, 229, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.limited-height:hover {
+  border-color: rgba(123, 47, 247, 0.6) !important;
+  box-shadow:
+    0 0 40px rgba(123, 47, 247, 0.3),
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    0 0 70px rgba(123, 47, 247, 0.2);
+}
+
+.limited-height :deep(.el-card__body) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
 /* 设备状态卡片 */

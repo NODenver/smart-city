@@ -36,6 +36,145 @@ body {
   background: rgba(0, 229, 255, 0.05) !important;
   border-bottom: 1px solid var(--glass-border) !important;
 }
+/* Element Plus Select输入框样式 */
+.el-select__wrapper {
+  background: transparent !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: none !important;
+}
+
+.el-select__wrapper:hover {
+  border-color: var(--border-primary-hover) !important;
+}
+
+.el-select__wrapper.is-focused {
+  border-color: var(--primary-color) !important;
+}
+
+/* Element Plus下拉选择器面板样式 */
+.el-select-dropdown {
+  background: var(--background-mute) !important;
+  border: 1px solid var(--border-color) !important;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+.el-select-dropdown__item {
+  color: var(--text-secondary) !important;
+  background: transparent !important;
+}
+
+.el-select-dropdown__item:hover {
+  color: var(--primary-color) !important;
+  background: rgba(0, 229, 255, 0.1) !important;
+}
+
+.el-select-dropdown__item.is-selected {
+  background: rgba(0, 229, 255, 0.25) !important;
+  color: var(--primary-color) !important;
+  font-weight: 600 !important;
+}
+
+.el-select-dropdown__list {
+  background: transparent !important;
+}
+
+/* 日期选择器面板样式 */
+.el-picker-panel {
+  background: var(--background-mute) !important;
+  border: 1px solid var(--border-color) !important;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+.el-date-picker__header-label,
+.el-date-table th,
+.el-picker-panel__icon-btn {
+  color: var(--text-secondary) !important;
+}
+
+.el-date-table td .el-date-table-cell__text {
+  color: var(--text-secondary) !important;
+}
+
+.el-date-table td.available:hover .el-date-table-cell__text {
+  color: var(--primary-color) !important;
+  background: rgba(0, 229, 255, 0.1) !important;
+}
+
+.el-date-table td.today .el-date-table-cell__text {
+  color: var(--primary-color) !important;
+  background: rgba(0, 229, 255, 0.2) !important;
+}
+
+.el-date-table td.selected .el-date-table-cell__text {
+  background: var(--primary-color) !important;
+  color: white !important;
+}
+
+.el-date-table td.in-range .el-date-table-cell__text {
+  background: rgba(0, 229, 255, 0.2) !important;
+  color: var(--text-primary) !important;
+}
+
+.el-picker-panel__content {
+  background: transparent !important;
+  color: var(--text-secondary) !important;
+}
+
+.el-date-picker__time-header {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.el-time-panel {
+  background: var(--background-mute) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* 日期范围选择器分隔符 */
+.el-range-separator {
+  color: var(--text-secondary) !important;
+}
+
+/* 日期表格单元格 */
+.el-date-table td {
+  color: var(--text-secondary) !important;
+}
+
+.el-date-table td.disabled .el-date-table-cell__text {
+  color: var(--text-disabled) !important;
+}
+
+/* 月份和年份选择 */
+.el-month-table td .cell,
+.el-year-table td .cell {
+  color: var(--text-secondary) !important;
+}
+
+.el-month-table td.current:not(.disabled) .cell,
+.el-year-table td.current:not(.disabled) .cell {
+  color: var(--primary-color) !important;
+}
+
+.el-month-table td .cell:hover,
+.el-year-table td .cell:hover {
+  color: var(--primary-color) !important;
+  background: rgba(0, 229, 255, 0.1) !important;
+}
+
+/* 时间选择器 */
+.el-time-spinner__item {
+  color: var(--text-secondary) !important;
+}
+
+.el-time-spinner__item.is-active {
+  color: var(--text-primary) !important;
+  font-weight: bold;
+}
+
+.el-time-panel__content {
+  color: var(--text-secondary) !important;
+}
 
 .card-header {
   display: flex;

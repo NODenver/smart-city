@@ -169,7 +169,7 @@
 
       <!-- 右侧列 -->
       <div class="dashboard-column">
-        <div class="chart-card full-height">
+        <div class="chart-card full-height" style="height: 400px !important;">
           <div class="chart-header">
             <h3>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -501,14 +501,47 @@ const initHourChart = () => {
     grid: {
       left: '3%',
       right: '4%',
-      bottom: '3%',
+      bottom: '15%',
+      top: '5%',
       containLabel: true
     },
+    dataZoom: [
+      {
+        type: 'slider',
+        show: true,
+        xAxisIndex: 0,
+        start: 0,
+        end: 50,
+        height: 20,
+        bottom: 5,
+        borderColor: 'rgba(6, 182, 212, 0.3)',
+        fillerColor: 'rgba(6, 182, 212, 0.2)',
+        handleStyle: {
+          color: '#06b6d4',
+          borderColor: '#06b6d4'
+        },
+        textStyle: {
+          color: '#94a3b8'
+        },
+        backgroundColor: 'rgba(15, 23, 42, 0.5)'
+      },
+      {
+        type: 'inside',
+        xAxisIndex: 0,
+        start: 0,
+        end: 50
+      }
+    ],
     xAxis: {
       type: 'category',
       data: hourChartData.value.hours,
       axisLine: { lineStyle: { color: '#334155' } },
-      axisLabel: { color: '#94a3b8', interval: 2 }
+      axisLabel: {
+        color: '#94a3b8',
+        interval: 0,
+        rotate: 45,
+        fontSize: 11
+      }
     },
     yAxis: {
       type: 'value',
@@ -519,6 +552,7 @@ const initHourChart = () => {
     series: [{
       data: hourChartData.value.values,
       type: 'bar',
+      barMaxWidth: 30,
       itemStyle: {
         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
           { offset: 0, color: '#06b6d4' },
@@ -728,9 +762,7 @@ watch(() => [dataStore.cityEvents.length, dataStore.sensorData.length], () => {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  height: calc(100vh - 180px);
   min-height: 600px;
-  overflow: hidden;
 }
 
 .dashboard-column {

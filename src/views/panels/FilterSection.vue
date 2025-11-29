@@ -315,21 +315,18 @@ const singleFilters = ref({
   dataSource: 'all',
   district: 'all',
   type: 'all',
-  startDate: '',
-  endDate: ''
+  dateRange: null as any
 });
 
 // 对比分析条件
 const compareFilters = ref({
   periodA: {
-    startDate: '',
-    endDate: '',
+    dateRange: null as any,
     district: 'all',
     type: 'all'
   },
   periodB: {
-    startDate: '',
-    endDate: '',
+    dateRange: null as any,
     district: 'all',
     type: 'all'
   }
@@ -371,9 +368,9 @@ const filteredData = computed(() => {
   }
 
   // 时间范围筛选
-  if (singleFilters.value.startDate && singleFilters.value.endDate) {
-    const start = new Date(singleFilters.value.startDate);
-    const end = new Date(singleFilters.value.endDate);
+  if (singleFilters.value.dateRange && singleFilters.value.dateRange.length === 2) {
+    const start = new Date(singleFilters.value.dateRange[0]);
+    const end = new Date(singleFilters.value.dateRange[1]);
     data = data.filter(item => {
       const timeStr = item.dataType === 'event' ? item.reportTime : item.timestamp;
       const time = new Date(timeStr);
@@ -415,9 +412,9 @@ const compareData = computed(() => {
     }
 
     // 时间范围筛选
-    if (period.startDate && period.endDate) {
-      const start = new Date(period.startDate);
-      const end = new Date(period.endDate);
+    if (period.dateRange && period.dateRange.length === 2) {
+      const start = new Date(period.dateRange[0]);
+      const end = new Date(period.dateRange[1]);
       data = data.filter(item => {
         const timeStr = item.dataType === 'event' ? item.reportTime : item.timestamp;
         const time = new Date(timeStr);
@@ -464,19 +461,16 @@ const resetFilter = () => {
     dataSource: 'all',
     district: 'all',
     type: 'all',
-    startDate: '',
-    endDate: ''
+    dateRange: null
   };
   compareFilters.value = {
     periodA: {
-      startDate: '',
-      endDate: '',
+      dateRange: null,
       district: 'all',
       type: 'all'
     },
     periodB: {
-      startDate: '',
-      endDate: '',
+      dateRange: null,
       district: 'all',
       type: 'all'
     }
@@ -838,11 +832,32 @@ const getTrendText = (change: number) => {
 }
 
 /* 样式覆盖 */
+.filter-section :deep(.el-table th.el-table__cell) {
+  background: var(--background-mute) !important;
+  border-bottom: 2px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.filter-section :deep(.el-table td.el-table__cell) {
+  background: var(--background-soft) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  color: var(--text-secondary) !important;
+}
+
+.filter-section :deep(.el-table__body tr:hover > td.el-table__cell) {
+  background: rgba(6, 182, 212, 0.1) !important;
+}
+
+.filter-section :deep(.el-table) {
+  background: transparent !important;
+  border: 1px solid var(--border-color) !important;
+}
+
 .filter-section :deep(.el-select .el-input__wrapper),
 .filter-section :deep(.el-date-picker .el-input__wrapper),
 .filter-section :deep(.el-date-editor.el-input__wrapper) {
   padding: 0.5rem 1rem;
-  background: var(--background-mute);
+  background: transparent;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   box-shadow: none;
@@ -929,4 +944,42 @@ const getTrendText = (change: number) => {
   background: var(--primary-color);
   color: white;
 }
+
+/* 日期选择器面板额外样式 */
+.filter-section :deep(.el-picker-panel__body-wrapper) {
+  background: transparent;
+}
+
+.filter-section :deep(.el-date-picker__header) {
+  color: var(--text-primary);
+}
+
+.filter-section :deep(.el-date-table td) {
+  color: var(--text-secondary);
+}
+
+.filter-section :deep(.el-date-table td .el-date-table-cell) {
+  color: var(--text-secondary);
+}
+
+.filter-section :deep(.el-date-table td.available .el-date-table-cell__text) {
+  color: var(--text-secondary) !important;
+}
+
+.filter-section :deep(.el-date-table td.current:not(.disabled) .el-date-table-cell__text) {
+  color: var(--primary-color) !important;
+}
+
+.filter-section :deep(.el-picker-panel__icon-btn) {
+  color: var(--text-secondary) !important;
+}
+
+.filter-section :deep(.el-date-picker__header-label) {
+  color: var(--text-primary) !important;
+}
+
+.filter-section :deep(.el-date-table th) {
+  color: var(--text-muted) !important;
+}
+
 </style>

@@ -191,7 +191,17 @@
 .app-main {
   position: relative;
   z-index: 1;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 100px);
+}
+
+.dashboard-view .app-main {
+  min-height: auto;
+  height: calc(100vh - 100px);
+}
+
+.dashboard-view .container {
+  padding: 0;
+  max-width: 100%;
 }
 
 .container {
