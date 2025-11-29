@@ -15,7 +15,8 @@
       "Bash(npm install jspdf html2canvas)",
       "Bash(git checkout:*)",
       "mcp__playwright__browser_console_messages",
-      "mcp__playwright__browser_tabs"
+      "mcp__playwright__browser_tabs",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
