@@ -1,0 +1,135 @@
+/* Smart City Design System - Based on Figma Design */
+:root {
+  /* 智慧城市配色方案 */
+  /* 背景色 - Slate系列深色 */
+  --background: #020617;  /* slate-950 */
+  --background-soft: #0f172a;  /* slate-900 */
+  --background-mute: #1e293b;  /* slate-800 */
+  --background-elevated: #334155;  /* slate-700 */
+
+  /* 主题色 - Cyan系列 */
+  --primary-color: #06b6d4;  /* cyan-500 */
+  --primary-hover: #0891b2;  /* cyan-600 */
+  --primary-light: #22d3ee;  /* cyan-400 */
+  --gradient-primary: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+
+  /* 文本色 */
+  --text-primary: #f1f5f9;  /* slate-100 */
+  --text-secondary: #cbd5e1;  /* slate-300 */
+  --text-muted: #94a3b8;  /* slate-400 */
+  --text-disabled: #64748b;  /* slate-500 */
+
+  /* 边框色 */
+  --border-color: rgba(51, 65, 85, 0.5);  /* slate-700 with opacity */
+  --border-hover: rgba(100, 116, 139, 0.5);  /* slate-500 with opacity */
+  --border-primary: rgba(6, 182, 212, 0.2);  /* cyan-500 with opacity */
+  --border-primary-hover: rgba(6, 182, 212, 0.4);
+
+  /* 毛玻璃效果 */
+  --glass-bg: rgba(15, 23, 42, 0.6);  /* slate-900 with opacity */
+  --glass-border: rgba(0, 229, 255, 0.2);
+
+  /* 状态色 */
+  --success-color: #10b981;  /* green-500 */
+  --warning-color: #f59e0b;  /* amber-500 */
+  --error-color: #ef4444;  /* red-500 */
+  --info-color: #3b82f6;  /* blue-500 */
+
+  /* 阴影 */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.3);
+  --glow-primary: 0 4px 20px rgba(6, 182, 212, 0.3);
+
+  /* 过渡动画 */
+  --transition-fast: 0.15s;
+  --transition-normal: 0.3s;
+  --transition-slow: 0.5s;
+
+  /* 间距 */
+  --section-gap: 24px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text-primary);
+  background: var(--background);
+  transition: color 0.3s, background-color 0.3s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-soft);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-elevated);
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* 全局动画类 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}

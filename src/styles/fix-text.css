@@ -1,0 +1,376 @@
+/* 强制覆盖所有文字颜色问题 - 终极版本 */
+
+/* 最高优先级覆盖 */
+html,
+body,
+#app {
+  color: var(--text-primary) !important;
+}
+
+* {
+  color: inherit;
+}
+
+/* Element Plus 通用文字颜色 - 强制覆盖 */
+.el-button,
+.el-button *,
+.el-card,
+.el-card *,
+.el-table,
+.el-table *,
+.el-statistic,
+.el-statistic *,
+.el-tag,
+.el-tag *,
+.el-radio-button,
+.el-radio-button *,
+.el-pagination,
+.el-pagination *,
+.el-dialog,
+.el-dialog *,
+.el-message-box,
+.el-message-box *,
+.el-form-item,
+.el-form-item *,
+.el-input__inner,
+.el-select .el-input__inner,
+.el-textarea__inner,
+.el-select-dropdown,
+.el-select-dropdown *,
+.el-menu,
+.el-menu *,
+.el-breadcrumb,
+.el-breadcrumb *,
+.el-steps,
+.el-steps *,
+.el-step__title,
+.el-step__description,
+.el-tree,
+.el-tree *,
+.el-tooltip__popper,
+.el-tooltip__popper * {
+  color: var(--text-primary) !important;
+}
+
+/* 具体修复 */
+.el-button--default,
+.el-button--default * {
+  color: var(--text-primary) !important;
+}
+
+.el-card__body,
+.el-card__body * {
+  color: var(--text-primary) !important;
+}
+
+.el-form-item__label {
+  color: var(--text-primary) !important;
+  font-weight: 600;
+}
+
+.el-input__inner,
+.el-textarea__inner {
+  color: var(--text-primary) !important;
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+}
+
+.el-input__inner::placeholder,
+.el-textarea__inner::placeholder {
+  color: var(--text-tertiary) !important;
+}
+
+.el-select .el-input__inner {
+  color: var(--text-primary) !important;
+}
+
+.el-select-dropdown {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+}
+
+.el-select-dropdown__item {
+  color: var(--text-primary) !important;
+}
+
+.el-select-dropdown__item:hover,
+.el-select-dropdown__item.selected {
+  background: rgba(0, 229, 255, 0.1) !important;
+  color: var(--primary-color) !important;
+}
+
+.el-menu {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+}
+
+.el-menu-item {
+  color: var(--text-primary) !important;
+}
+
+.el-menu-item:hover,
+.el-menu-item.is-active {
+  background: rgba(0, 229, 255, 0.1) !important;
+  color: var(--primary-color) !important;
+}
+
+.el-breadcrumb {
+  color: var(--text-secondary) !important;
+}
+
+.el-breadcrumb__item {
+  color: var(--text-secondary) !important;
+}
+
+.el-breadcrumb__inner {
+  color: var(--text-secondary) !important;
+}
+
+.el-breadcrumb__inner:hover {
+  color: var(--primary-color) !important;
+}
+
+.el-step__title {
+  color: var(--text-primary) !important;
+  font-weight: 600;
+}
+
+.el-step__description {
+  color: var(--text-secondary) !important;
+}
+
+.el-tree {
+  background: transparent !important;
+  color: var(--text-primary) !important;
+}
+
+.el-tree-node__label {
+  color: var(--text-primary) !important;
+}
+
+.el-tree-node__content:hover {
+  background: rgba(0, 229, 255, 0.1) !important;
+}
+
+.el-tooltip__popper {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  color: var(--text-primary) !important;
+}
+
+/* 单选、复选框文字 */
+.el-radio__label {
+  color: var(--text-primary) !important;
+}
+
+.el-checkbox__label {
+  color: var(--text-primary) !important;
+}
+
+/* 分页 */
+.el-pager li {
+  background: var(--glass-bg) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--glass-border) !important;
+}
+
+.el-pager li:hover {
+  color: var(--primary-color) !important;
+}
+
+.el-pager li.is-active {
+  background: var(--gradient-primary) !important;
+  color: #fff !important;
+}
+
+.el-pagination .btn-prev,
+.el-pagination .btn-next {
+  background: var(--glass-bg) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--glass-border) !important;
+}
+
+.el-pagination .btn-prev:hover,
+.el-pagination .btn-next:hover {
+  color: var(--primary-color) !important;
+}
+
+.el-pagination__total {
+  color: var(--text-secondary) !important;
+}
+
+.el-pagination__sizes .el-input__inner {
+  color: var(--text-primary) !important;
+}
+
+.el-pagination__jump {
+  color: var(--text-secondary) !important;
+}
+
+/* 步骤条 */
+.el-steps--simple {
+  background: var(--glass-bg) !important;
+}
+
+.el-step.is-process .el-step__icon {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.el-step.is-finish .el-step__icon {
+  background: var(--success-color) !important;
+  color: #fff !important;
+}
+
+.el-step.is-wait .el-step__icon {
+  background: var(--glass-bg) !important;
+  color: var(--text-tertiary) !important;
+  border: 2px solid var(--glass-border) !important;
+}
+
+/* 面包屑 */
+.el-breadcrumb__item:last-child .el-breadcrumb__inner {
+  color: var(--text-primary) !important;
+}
+
+/* 对话框 */
+.el-dialog {
+  background: var(--glass-bg) !important;
+}
+
+.el-dialog__header {
+  background: rgba(0, 229, 255, 0.05) !important;
+}
+
+.el-dialog__title {
+  color: var(--text-primary) !important;
+}
+
+.el-dialog__body {
+  color: var(--text-primary) !important;
+}
+
+/* 消息提示框 */
+.el-message-box {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+}
+
+.el-message-box__title {
+  color: var(--text-primary) !important;
+}
+
+.el-message-box__message {
+  color: var(--text-primary) !important;
+}
+
+/* 标签页 */
+.el-tabs__item {
+  color: var(--text-secondary) !important;
+}
+
+.el-tabs__item.is-active {
+  color: var(--primary-color) !important;
+}
+
+.el-tabs__content {
+  color: var(--text-primary) !important;
+}
+
+/* 表单验证 */
+.el-form-item__error {
+  color: var(--danger-color) !important;
+}
+
+/* 提示文本 */
+.el-form-item__label,
+.el-form-item__content {
+  color: var(--text-primary) !important;
+}
+
+.el-form-item__extra {
+  color: var(--text-tertiary) !important;
+}
+
+/* 终极强制覆盖 - 所有可能的文字元素 */
+.el-button span,
+.el-button div,
+.el-card span,
+.el-card div,
+.el-table td,
+.el-table th,
+.el-table span,
+.el-table div,
+.el-dialog span,
+.el-dialog div,
+.el-message-box span,
+.el-message-box div,
+.el-form-item span,
+.el-form-item div,
+.el-input span,
+.el-input div,
+.el-select span,
+.el-select div,
+.el-menu-item span,
+.el-menu-item div,
+.el-breadcrumb span,
+.el-breadcrumb div,
+.el-steps span,
+.el-steps div,
+.el-tree span,
+.el-tree div,
+.el-tooltip span,
+.el-tooltip div,
+.el-pagination span,
+.el-pagination div,
+.el-radio-button span,
+.el-radio-button div,
+.el-checkbox span,
+.el-checkbox div,
+.el-tag span,
+.el-tag div,
+.el-statistic span,
+.el-statistic div,
+.el-tabs span,
+.el-tabs div {
+  color: inherit !important;
+}
+
+/* 确保所有文字使用CSS变量 */
+.el-button,
+.el-card,
+.el-table,
+.el-dialog,
+.el-message-box,
+.el-form-item,
+.el-input,
+.el-select,
+.el-menu-item,
+.el-breadcrumb,
+.el-steps,
+.el-tree,
+.el-tooltip,
+.el-pagination,
+.el-radio-button,
+.el-checkbox,
+.el-tag,
+.el-statistic,
+.el-tabs {
+  color: var(--text-primary) !important;
+}
+
+/* 使用更具体的选择器确保覆盖 */
+.el-button:not([class*="danger"]):not([class*="warning"]):not([class*="success"]):not([class*="info"]),
+.el-button:not([class*="danger"]):not([class*="warning"]):not([class*="success"]):not([class*="info"]) * {
+  color: var(--text-primary) !important;
+}
+
+.el-table .el-table__cell > *,
+.el-card .el-card__body > *,
+.el-dialog .el-dialog__body > *,
+.el-form-item .el-form-item__content > *,
+.el-input .el-input__wrapper > *,
+.el-select .el-select__wrapper > * {
+  color: inherit !important;
+}
+

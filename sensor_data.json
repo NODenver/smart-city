@@ -1,0 +1,1502 @@
+[
+  {
+    "sensorId": "SN-PM-071",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.9283381923029,
+      "lng": 116.24746265273954
+    },
+    "value": 47,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-20T16:56:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-PM-070",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.89663122761906,
+      "lng": 116.26995383806619
+    },
+    "value": 45.4,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-20T18:34:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-029",
+    "type": "路灯电流",
+    "location": {
+      "district": "海淀区",
+      "street": "知春路",
+      "lat": 39.98371086407788,
+      "lng": 116.3393754772505
+    },
+    "value": 0.3,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-20T18:50:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-环境-004",
+    "type": "环境噪音",
+    "location": {
+      "district": "海淀区",
+      "street": "海淀大街",
+      "lat": 39.96392148742234,
+      "lng": 116.31781326077031
+    },
+    "value": 23.6,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-20T20:22:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-010",
+    "type": "空气质量",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.93465139108083,
+      "lng": 116.32378307368872
+    },
+    "value": 54,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-20T21:12:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-068",
+    "type": "空气质量",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.9344862112926,
+      "lng": 116.22374286476354
+    },
+    "value": 54.6,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-20T23:24:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-092",
+    "type": "路灯电流",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.93258680741068,
+      "lng": 116.30812730181796
+    },
+    "value": 0.4,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-21T03:39:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-积水-060",
+    "type": "积水监测",
+    "location": {
+      "district": "丰台区",
+      "street": "南三环",
+      "lat": 39.8505170275714,
+      "lng": 116.25380000818352
+    },
+    "value": 54.1,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-21T07:15:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-环境-088",
+    "type": "环境噪音",
+    "location": {
+      "district": "海淀区",
+      "street": "学院路",
+      "lat": 39.953803551212026,
+      "lng": 116.32966428480339
+    },
+    "value": 40.6,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-21T09:24:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-环境-002",
+    "type": "环境噪音",
+    "location": {
+      "district": "海淀区",
+      "street": "中关村大街",
+      "lat": 39.96753114882273,
+      "lng": 116.33878118137724
+    },
+    "value": 21.3,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-21T14:00:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-093",
+    "type": "空气质量",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.94236361583177,
+      "lng": 116.24355213716481
+    },
+    "value": 35.1,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-21T15:12:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-积水-094",
+    "type": "积水监测",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.91290955549658,
+      "lng": 116.20275186056914
+    },
+    "value": 21.9,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-21T17:13:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-积水-062",
+    "type": "积水监测",
+    "location": {
+      "district": "丰台区",
+      "street": "南三环",
+      "lat": 39.88765135785429,
+      "lng": 116.30793181144763
+    },
+    "value": 20.6,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-21T17:46:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-095",
+    "type": "路灯电流",
+    "location": {
+      "district": "丰台区",
+      "street": "南三环",
+      "lat": 39.86138153765784,
+      "lng": 116.26346565302325
+    },
+    "value": 0.3,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-21T19:05:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-积水-023",
+    "type": "积水监测",
+    "location": {
+      "district": "朝阳区",
+      "street": "工体北路",
+      "lat": 39.92780026543818,
+      "lng": 116.40941902985644
+    },
+    "value": 22.8,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-21T22:37:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-积水-014",
+    "type": "积水监测",
+    "location": {
+      "district": "朝阳区",
+      "street": "工体北路",
+      "lat": 39.9409985933559,
+      "lng": 116.47157034028064
+    },
+    "value": 11.6,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-22T00:04:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-PM-018",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "朝阳区",
+      "street": "三里屯路",
+      "lat": 39.912509774357474,
+      "lng": 116.42252614267426
+    },
+    "value": 133.1,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-22T02:18:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-积水-042",
+    "type": "积水监测",
+    "location": {
+      "district": "朝阳区",
+      "street": "望京街",
+      "lat": 39.949526863296995,
+      "lng": 116.41643554695331
+    },
+    "value": 13.5,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-22T02:43:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-PM-057",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.930989608900084,
+      "lng": 116.21321513838296
+    },
+    "value": 44,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-22T03:29:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-PM-065",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "东城区",
+      "street": "崇文门外大街",
+      "lat": 39.90183258076581,
+      "lng": 116.40930802125332
+    },
+    "value": 39.4,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-22T07:40:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-井盖-024",
+    "type": "井盖位移",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.907676842393364,
+      "lng": 116.2476104171791
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-22T08:59:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-路灯-069",
+    "type": "路灯电流",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路",
+      "lat": 39.9215183603859,
+      "lng": 116.48744423587951
+    },
+    "value": 0.8,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-22T12:33:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-PM-083",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.88246143195652,
+      "lng": 116.30596315425551
+    },
+    "value": 43,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-22T13:31:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-井盖-049",
+    "type": "井盖位移",
+    "location": {
+      "district": "海淀区",
+      "street": "学院路",
+      "lat": 39.9849858441894,
+      "lng": 116.31444452013976
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-22T14:10:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-环境-025",
+    "type": "环境噪音",
+    "location": {
+      "district": "东城区",
+      "street": "崇文门外大街",
+      "lat": 39.91356475758313,
+      "lng": 116.40201059548937
+    },
+    "value": 33.1,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-22T14:54:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-012",
+    "type": "空气质量",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.914077546734,
+      "lng": 116.41001420598504
+    },
+    "value": 47.2,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-22T15:06:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-井盖-075",
+    "type": "井盖位移",
+    "location": {
+      "district": "东城区",
+      "street": "崇文门外大街",
+      "lat": 39.915301929533825,
+      "lng": 116.41588704687011
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-22T20:19:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-环境-006",
+    "type": "环境噪音",
+    "location": {
+      "district": "朝阳区",
+      "street": "望京街",
+      "lat": 39.949818616955355,
+      "lng": 116.4727785269463
+    },
+    "value": 81.3,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-22T20:40:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-PM-059",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.94045511978015,
+      "lng": 116.24366696870254
+    },
+    "value": 49.5,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-22T21:56:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-PM-085",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.932496750597934,
+      "lng": 116.21504948336276
+    },
+    "value": 135,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-22T23:21:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-路灯-021",
+    "type": "路灯电流",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.92753879326732,
+      "lng": 116.23486654823209
+    },
+    "value": 0.2,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-23T01:13:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-028",
+    "type": "空气质量",
+    "location": {
+      "district": "西城区",
+      "street": "复兴门内大街",
+      "lat": 39.92017216173076,
+      "lng": 116.33300446979104
+    },
+    "value": 47.9,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-23T03:43:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-030",
+    "type": "空气质量",
+    "location": {
+      "district": "海淀区",
+      "street": "知春路",
+      "lat": 39.9714756333596,
+      "lng": 116.34706554930652
+    },
+    "value": 141.1,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-23T06:27:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-路灯-099",
+    "type": "路灯电流",
+    "location": {
+      "district": "丰台区",
+      "street": "南三环",
+      "lat": 39.88416801510608,
+      "lng": 116.28204080516406
+    },
+    "value": 0.3,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-23T08:19:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-PM-020",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.94582003729258,
+      "lng": 116.22915611996643
+    },
+    "value": 106.5,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-23T09:55:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-空气-098",
+    "type": "空气质量",
+    "location": {
+      "district": "丰台区",
+      "street": "丰台路",
+      "lat": 39.86468084578755,
+      "lng": 116.25985077549959
+    },
+    "value": 61.9,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-23T11:26:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-环境-045",
+    "type": "环境噪音",
+    "location": {
+      "district": "西城区",
+      "street": "复兴门内大街",
+      "lat": 39.949991329197005,
+      "lng": 116.30876769210347
+    },
+    "value": 50.4,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-23T12:23:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-039",
+    "type": "空气质量",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.94369693796932,
+      "lng": 116.2437275320971
+    },
+    "value": 55.5,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-23T13:08:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-033",
+    "type": "路灯电流",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路",
+      "lat": 39.927309653018895,
+      "lng": 116.45824359393309
+    },
+    "value": 0.9,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-23T14:02:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-环境-009",
+    "type": "环境噪音",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.87656866304538,
+      "lng": 116.25180191894938
+    },
+    "value": 98.8,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-23T15:00:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-空气-031",
+    "type": "空气质量",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路",
+      "lat": 39.93476693623782,
+      "lng": 116.44223553369017
+    },
+    "value": 33.2,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-23T15:02:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-井盖-027",
+    "type": "井盖位移",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.91530128457934,
+      "lng": 116.40904856052136
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-23T15:51:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-环境-073",
+    "type": "环境噪音",
+    "location": {
+      "district": "朝阳区",
+      "street": "工体北路",
+      "lat": 39.90641728334693,
+      "lng": 116.42778847733152
+    },
+    "value": 20.7,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-23T15:51:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-PM-013",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "朝阳区",
+      "street": "望京街",
+      "lat": 39.90622178847697,
+      "lng": 116.43584611544948
+    },
+    "value": 36.5,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-23T18:54:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-063",
+    "type": "空气质量",
+    "location": {
+      "district": "西城区",
+      "street": "西单北大街",
+      "lat": 39.93815892473895,
+      "lng": 116.32628852198783
+    },
+    "value": 66,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-23T20:44:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-091",
+    "type": "路灯电流",
+    "location": {
+      "district": "东城区",
+      "street": "崇文门外大街",
+      "lat": 39.91298682790178,
+      "lng": 116.40938892408802
+    },
+    "value": 1,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-24T00:55:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-环境-032",
+    "type": "环境噪音",
+    "location": {
+      "district": "丰台区",
+      "street": "丰台路",
+      "lat": 39.89885350505784,
+      "lng": 116.2687206726157
+    },
+    "value": 19.9,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-24T02:30:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-026",
+    "type": "空气质量",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.906452965612864,
+      "lng": 116.4023214272233
+    },
+    "value": 50.5,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-24T05:08:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-井盖-081",
+    "type": "井盖位移",
+    "location": {
+      "district": "海淀区",
+      "street": "中关村大街",
+      "lat": 39.96141666740888,
+      "lng": 116.30828067607445
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-24T05:49:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-井盖-072",
+    "type": "井盖位移",
+    "location": {
+      "district": "西城区",
+      "street": "西单北大街",
+      "lat": 39.94176495766501,
+      "lng": 116.30953155869938
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-24T09:39:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-井盖-044",
+    "type": "井盖位移",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.85174768804318,
+      "lng": 116.27033209817061
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-24T10:31:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-077",
+    "type": "空气质量",
+    "location": {
+      "district": "海淀区",
+      "street": "学院路",
+      "lat": 39.99153136243078,
+      "lng": 116.30312542162277
+    },
+    "value": 53.5,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-24T16:37:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-036",
+    "type": "空气质量",
+    "location": {
+      "district": "朝阳区",
+      "street": "望京街",
+      "lat": 39.9442971120778,
+      "lng": 116.4230190145074
+    },
+    "value": 41.8,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-24T17:48:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-037",
+    "type": "路灯电流",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.91734707657175,
+      "lng": 116.24864210163605
+    },
+    "value": 0.9,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-24T18:18:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-PM-034",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.902389487358526,
+      "lng": 116.23892237317432
+    },
+    "value": 110.1,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-24T18:53:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-PM-089",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.90633535968068,
+      "lng": 116.24299536951719
+    },
+    "value": 149.9,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-24T21:34:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-井盖-016",
+    "type": "井盖位移",
+    "location": {
+      "district": "海淀区",
+      "street": "海淀大街",
+      "lat": 39.96962352829254,
+      "lng": 116.33876160256706
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-24T23:24:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-积水-001",
+    "type": "积水监测",
+    "location": {
+      "district": "东城区",
+      "street": "王府井大街",
+      "lat": 39.91348986120062,
+      "lng": 116.4075088371503
+    },
+    "value": 44.8,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-25T02:19:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-井盖-046",
+    "type": "井盖位移",
+    "location": {
+      "district": "丰台区",
+      "street": "南三环",
+      "lat": 39.88221199106945,
+      "lng": 116.32536443518846
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-25T04:54:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-PM-066",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "丰台区",
+      "street": "南三环",
+      "lat": 39.89515798572995,
+      "lng": 116.34119296786801
+    },
+    "value": 44.7,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-25T06:44:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-056",
+    "type": "路灯电流",
+    "location": {
+      "district": "东城区",
+      "street": "王府井大街",
+      "lat": 39.91987922392207,
+      "lng": 116.40288142722451
+    },
+    "value": 0.4,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-25T09:14:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-048",
+    "type": "空气质量",
+    "location": {
+      "district": "朝阳区",
+      "street": "工体北路",
+      "lat": 39.947560102789886,
+      "lng": 116.41558667566535
+    },
+    "value": 183.5,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-25T13:19:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-空气-061",
+    "type": "空气质量",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.902701023138235,
+      "lng": 116.41821195444471
+    },
+    "value": 60.8,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-25T14:05:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-053",
+    "type": "路灯电流",
+    "location": {
+      "district": "西城区",
+      "street": "西单北大街",
+      "lat": 39.928468391335805,
+      "lng": 116.31194845552537
+    },
+    "value": 0.2,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-25T14:54:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-003",
+    "type": "空气质量",
+    "location": {
+      "district": "西城区",
+      "street": "西单北大街",
+      "lat": 39.93946294037544,
+      "lng": 116.32307714604637
+    },
+    "value": 125.3,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-25T17:01:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-井盖-051",
+    "type": "井盖位移",
+    "location": {
+      "district": "东城区",
+      "street": "王府井大街",
+      "lat": 39.901115213979274,
+      "lng": 116.41999070453544
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-25T17:22:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-积水-074",
+    "type": "积水监测",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.93587188947448,
+      "lng": 116.33766052579598
+    },
+    "value": 10.2,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-25T19:56:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-041",
+    "type": "空气质量",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.91108768262096,
+      "lng": 116.24087604255463
+    },
+    "value": 35.1,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-25T22:26:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-PM-076",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "海淀区",
+      "street": "海淀大街",
+      "lat": 39.968615503922905,
+      "lng": 116.30558642580814
+    },
+    "value": 59.2,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-26T00:38:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-井盖-050",
+    "type": "井盖位移",
+    "location": {
+      "district": "西城区",
+      "street": "西单北大街",
+      "lat": 39.92250472544879,
+      "lng": 116.31152783274389
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-26T00:48:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-环境-040",
+    "type": "环境噪音",
+    "location": {
+      "district": "朝阳区",
+      "street": "望京街",
+      "lat": 39.94424828171924,
+      "lng": 116.46986707606929
+    },
+    "value": 33.9,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-26T02:44:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-井盖-035",
+    "type": "井盖位移",
+    "location": {
+      "district": "海淀区",
+      "street": "海淀大街",
+      "lat": 39.9588625389729,
+      "lng": 116.31224427750462
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-26T04:40:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-井盖-079",
+    "type": "井盖位移",
+    "location": {
+      "district": "朝阳区",
+      "street": "工体北路",
+      "lat": 39.91960901892649,
+      "lng": 116.40484447325592
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-26T07:33:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-井盖-100",
+    "type": "井盖位移",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路",
+      "lat": 39.924012822407185,
+      "lng": 116.4064574913309
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-26T08:40:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-019",
+    "type": "路灯电流",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.94188117032137,
+      "lng": 116.21012685400362
+    },
+    "value": 0.4,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-26T08:48:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-084",
+    "type": "路灯电流",
+    "location": {
+      "district": "海淀区",
+      "street": "学院路",
+      "lat": 39.994870831882146,
+      "lng": 116.33928120439279
+    },
+    "value": 0.9,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-26T09:45:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-积水-090",
+    "type": "积水监测",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.94356757554934,
+      "lng": 116.22335378875273
+    },
+    "value": 12.6,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-26T10:11:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-047",
+    "type": "空气质量",
+    "location": {
+      "district": "西城区",
+      "street": "西单北大街",
+      "lat": 39.936807003847015,
+      "lng": 116.3253797989156
+    },
+    "value": 64.1,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-26T15:56:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-环境-055",
+    "type": "环境噪音",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.87487425839792,
+      "lng": 116.3393808643016
+    },
+    "value": 45.8,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-26T18:34:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-井盖-038",
+    "type": "井盖位移",
+    "location": {
+      "district": "西城区",
+      "street": "复兴门内大街",
+      "lat": 39.92384803038581,
+      "lng": 116.31605812812747
+    },
+    "value": 0,
+    "unit": "位移报警",
+    "threshold": 0,
+    "timestamp": "2025-11-26T19:43:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-积水-086",
+    "type": "积水监测",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.914853790488856,
+      "lng": 116.2047409291543
+    },
+    "value": 19.8,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-26T20:25:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-058",
+    "type": "路灯电流",
+    "location": {
+      "district": "东城区",
+      "street": "崇文门外大街",
+      "lat": 39.91575414221266,
+      "lng": 116.41663557248222
+    },
+    "value": 0.9,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-26T20:57:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-环境-017",
+    "type": "环境噪音",
+    "location": {
+      "district": "丰台区",
+      "street": "南三环",
+      "lat": 39.89655571914181,
+      "lng": 116.26039909021334
+    },
+    "value": 23.2,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-26T21:30:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-PM-064",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.900315133560945,
+      "lng": 116.40005042601926
+    },
+    "value": 29.6,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-26T23:07:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-环境-097",
+    "type": "环境噪音",
+    "location": {
+      "district": "丰台区",
+      "street": "南三环",
+      "lat": 39.89471127748602,
+      "lng": 116.31047528615817
+    },
+    "value": 45.8,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-27T00:33:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-022",
+    "type": "路灯电流",
+    "location": {
+      "district": "东城区",
+      "street": "王府井大街",
+      "lat": 39.91776282936685,
+      "lng": 116.40824533477468
+    },
+    "value": 0.3,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-27T03:35:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-积水-011",
+    "type": "积水监测",
+    "location": {
+      "district": "朝阳区",
+      "street": "三里屯路",
+      "lat": 39.91372893687399,
+      "lng": 116.42326420257514
+    },
+    "value": 20.2,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-27T03:45:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-空气-007",
+    "type": "空气质量",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.90211536307955,
+      "lng": 116.24268809778299
+    },
+    "value": 58,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-27T04:05:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-积水-054",
+    "type": "积水监测",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.91912563198703,
+      "lng": 116.23434969177781
+    },
+    "value": 11.9,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-27T06:47:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-积水-067",
+    "type": "积水监测",
+    "location": {
+      "district": "西城区",
+      "street": "复兴门内大街",
+      "lat": 39.94105550915502,
+      "lng": 116.33800393789609
+    },
+    "value": 49.9,
+    "unit": "cm",
+    "threshold": 30,
+    "timestamp": "2025-11-27T07:58:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-PM-015",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "朝阳区",
+      "street": "三里屯路",
+      "lat": 39.91278538408102,
+      "lng": 116.40093918513944
+    },
+    "value": 137.9,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-27T09:07:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-路灯-096",
+    "type": "路灯电流",
+    "location": {
+      "district": "东城区",
+      "street": "崇文门外大街",
+      "lat": 39.90758707902918,
+      "lng": 116.41336941827659
+    },
+    "value": 0.9,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-27T10:00:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-空气-078",
+    "type": "空气质量",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.92826348054934,
+      "lng": 116.3468835148851
+    },
+    "value": 41.3,
+    "unit": "AQI",
+    "threshold": 100,
+    "timestamp": "2025-11-27T11:36:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-环境-080",
+    "type": "环境噪音",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路",
+      "lat": 39.91974992158079,
+      "lng": 116.48264916231828
+    },
+    "value": 37.2,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-27T12:46:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-环境-082",
+    "type": "环境噪音",
+    "location": {
+      "district": "西城区",
+      "street": "西单北大街",
+      "lat": 39.94874533605809,
+      "lng": 116.3095670307684
+    },
+    "value": 100.4,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-27T13:22:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-路灯-087",
+    "type": "路灯电流",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.90314666834904,
+      "lng": 116.2331381541074
+    },
+    "value": 0.6,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-27T14:20:00.000Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "SN-环境-005",
+    "type": "环境噪音",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.91565833750805,
+      "lng": 116.22293064616763
+    },
+    "value": 25.2,
+    "unit": "dB",
+    "threshold": 65,
+    "timestamp": "2025-11-27T14:29:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-PM-052",
+    "type": "PM2.5监测",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.91724734512558,
+      "lng": 116.41494178041543
+    },
+    "value": 43,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2025-11-27T19:44:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-008",
+    "type": "路灯电流",
+    "location": {
+      "district": "朝阳区",
+      "street": "工体北路",
+      "lat": 39.93852462505975,
+      "lng": 116.47968823848352
+    },
+    "value": 0.4,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-28T05:15:00.000Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "SN-路灯-043",
+    "type": "路灯电流",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.94304928343312,
+      "lng": 116.20045223194475
+    },
+    "value": 0.2,
+    "unit": "A",
+    "threshold": 0.5,
+    "timestamp": "2025-11-28T06:29:00.000Z",
+    "status": "正常"
+  }
+]

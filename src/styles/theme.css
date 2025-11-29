@@ -1,0 +1,920 @@
+:root {
+  /* 深色科技风主题色系 */
+  --primary-bg: #05070e;
+  --secondary-bg: #0d1424;
+  --card-bg: rgba(15, 23, 42, 0.85);
+  --card-border: rgba(0, 229, 255, 0.4);
+
+  /* 背景色变量 */
+  --background-primary: #05070e;
+  --background-soft: rgba(15, 23, 42, 0.6);
+  --background-mute: rgba(30, 41, 59, 0.5);
+
+  /* 边框颜色 */
+  --border-color: rgba(0, 229, 255, 0.2);
+
+  /* 主色调 - 霓虹蓝 */
+  --primary-color: #00e5ff;
+  --primary-light: #33f0ff;
+  --primary-dark: #00b3cc;
+
+  /* 辅助色 - 紫青 */
+  --secondary-color: #7b2ff7;
+  --secondary-light: #9d4dff;
+  --secondary-dark: #6a1fd9;
+
+  /* 成功/警告/错误色 */
+  --success-color: #00ff88;
+  --warning-color: #ffaa00;
+  --danger-color: #ff3366;
+  --info-color: #00e5ff;
+
+  /* 文字颜色 - 超亮清晰 */
+  --text-primary: #ffffff;
+  --text-secondary: #f5f5f5;
+  --text-tertiary: #d1d5db;
+  --text-muted: rgba(148, 163, 184, 0.9);
+
+  /* 玻璃态效果 - 更不透明 */
+  --glass-bg: rgba(15, 23, 42, 0.95);
+  --glass-border: rgba(0, 229, 255, 0.5);
+  --glass-shadow: 0 8px 32px rgba(0, 229, 255, 0.2);
+
+  /* 发光效果 */
+  --glow-primary: 0 0 25px rgba(0, 229, 255, 0.6);
+  --glow-secondary: 0 0 25px rgba(123, 47, 247, 0.6);
+
+  /* 渐变 */
+  --gradient-primary: linear-gradient(135deg, #00e5ff 0%, #7b2ff7 100%);
+  --gradient-secondary: linear-gradient(135deg, #0d1424 0%, #05070e 100%);
+
+  /* 动画时长 */
+  --transition-fast: 0.2s;
+  --transition-normal: 0.3s;
+  --transition-slow: 0.5s;
+}
+
+/* 全局基础样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  background: var(--primary-bg);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* 科技风背景网格 */
+.tech-grid-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background:
+    /* 垂直线 */
+    linear-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 1px),
+    /* 水平线 */
+    linear-gradient(90deg, rgba(0, 229, 255, 0.03) 1px, transparent 1px),
+    /* 主背景渐变 */
+    var(--gradient-secondary);
+  background-size: 50px 50px, 50px 50px, 100% 100%;
+  background-position: center center;
+}
+
+/* 科技风连接线动画 */
+.tech-lines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.tech-lines::before,
+.tech-lines::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0, 229, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(123, 47, 247, 0.1) 0%, transparent 50%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.tech-lines::after {
+  animation-delay: -2s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* 玻璃态卡片 */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--glass-shadow);
+  transition: all var(--transition-normal) ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 229, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.glass-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--glow-primary), var(--glass-shadow);
+  transform: translateY(-2px);
+}
+
+.glass-card:hover::before {
+  left: 100%;
+}
+
+/* 科技风按钮 */
+.tech-button {
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal) ease;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tech-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.tech-button:hover {
+  box-shadow: var(--glow-primary);
+  transform: translateY(-2px);
+}
+
+.tech-button:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+.tech-button--outline {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.tech-button--outline:hover {
+  background: var(--primary-color);
+  color: var(--primary-bg);
+}
+
+/* 科技风标题 */
+.tech-title {
+  font-size: 24px;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.tech-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+/* 科技风标签 */
+.tech-tag {
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: 20px;
+  padding: 4px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 统计卡片 */
+.stat-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-normal) ease;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: opacity var(--transition-normal) ease;
+}
+
+.stat-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+  box-shadow: var(--glow-primary);
+}
+
+.stat-card:hover::before {
+  opacity: 1;
+}
+
+.stat-card .stat-label {
+  font-size: 14px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.stat-card .stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 数据表格科技风 */
+.tech-table {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.tech-table .el-table__header {
+  background: rgba(0, 229, 255, 0.05);
+}
+
+.tech-table .el-table__header th {
+  background: transparent;
+  border-bottom: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 16px;
+}
+
+.tech-table .el-table__body td {
+  border-bottom: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  padding: 16px;
+}
+
+.tech-table .el-table__body tr:hover > td {
+  background: rgba(0, 229, 255, 0.05);
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(19, 24, 54, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-light);
+}
+
+/* 加载动画 */
+@keyframes tech-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tech-loading {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(0, 229, 255, 0.1);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: tech-loading 1s linear infinite;
+}
+
+/* Element Plus 组件覆盖 */
+.el-card {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 16px !important;
+  color: var(--text-primary) !important;
+}
+
+.el-card__header {
+  background: rgba(0, 229, 255, 0.08) !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.el-button--primary {
+  background: var(--gradient-primary) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.el-button--success {
+  background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%) !important;
+  border: none !important;
+}
+
+.el-button--warning {
+  background: linear-gradient(135deg, #ffaa00 0%, #ff8800 100%) !important;
+  border: none !important;
+}
+
+.el-button--danger {
+  background: linear-gradient(135deg, #ff3366 0%, #cc0052 100%) !important;
+  border: none !important;
+}
+
+.el-radio-button__original-radio:checked + .el-radio-button__inner {
+  background: var(--gradient-primary) !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: var(--glow-primary) !important;
+  color: #ffffff !important;
+}
+
+.el-tag {
+  border-radius: 20px !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.el-upload-dragger {
+  background: var(--glass-bg) !important;
+  border: 2px dashed var(--glass-border) !important;
+  border-radius: 16px !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+.el-upload-dragger:hover {
+  border-color: var(--primary-color) !important;
+  background: rgba(0, 229, 255, 0.08) !important;
+}
+
+.el-statistic__content {
+  color: var(--text-primary) !important;
+  font-weight: 700 !important;
+}
+
+.el-statistic__prefix {
+  color: var(--primary-color) !important;
+}
+
+.el-statistic__title {
+  color: var(--text-tertiary) !important;
+}
+
+.el-table {
+  color: var(--text-primary) !important;
+  background: transparent !important;
+  border: 1px solid var(--glass-border) !important;
+}
+
+.el-table::before {
+  display: none !important;
+}
+
+.el-table::after {
+  display: none !important;
+}
+
+.el-table .el-table__header-wrapper {
+  background: transparent !important;
+}
+
+.el-table th.el-table__cell {
+  background: rgba(0, 229, 255, 0.15) !important;
+  color: var(--text-primary) !important;
+  border-bottom: 2px solid var(--glass-border) !important;
+  border-right: 1px solid var(--glass-border) !important;
+}
+
+.el-table td.el-table__cell {
+  background: rgba(15, 23, 42, 0.8) !important;
+  color: var(--text-primary) !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+  border-right: 1px solid var(--glass-border) !important;
+}
+
+.el-table__row {
+  background: transparent !important;
+}
+
+.el-table__row:hover > td.el-table__cell {
+  background: rgba(0, 229, 255, 0.25) !important;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped > td.el-table__cell {
+  background: rgba(15, 23, 42, 0.65) !important;
+}
+
+/* 序号列 */
+.el-table .el-table__row > td:first-child {
+  border-left: 1px solid var(--glass-border) !important;
+}
+
+.el-table .el-table__header th:first-child {
+  border-left: 1px solid var(--glass-border) !important;
+}
+
+/* 表格底部边框 */
+.el-table__footer-wrapper,
+.el-table__fixed-footer-wrapper {
+  border-top: 2px solid var(--glass-border) !important;
+}
+
+/* 移除默认白色边框 */
+.el-table--border::after,
+.el-table--border::before {
+  display: none !important;
+}
+
+/* 分页组件样式 */
+.el-pagination__sizes .el-select .el-input__wrapper {
+  background: var(--glass-bg) !important;
+  border-color: var(--glass-border) !important;
+  box-shadow: none !important;
+}
+
+.el-pagination__sizes .el-select .el-input__wrapper:hover {
+  border-color: var(--primary-color) !important;
+}
+
+.el-pagination__jump .el-input__wrapper {
+  background: var(--glass-bg) !important;
+  border-color: var(--glass-border) !important;
+  box-shadow: none !important;
+}
+
+.el-pagination__jump .el-input__wrapper:hover {
+  border-color: var(--primary-color) !important;
+}
+
+.el-pagination__total {
+  color: var(--text-primary) !important;
+}
+
+.el-pagination button {
+  background: var(--glass-bg) !important;
+  border-color: var(--glass-border) !important;
+  color: var(--text-primary) !important;
+}
+
+.el-pagination button:hover {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.el-pagination button:disabled {
+  background: var(--glass-bg) !important;
+  border-color: var(--glass-border) !important;
+  color: var(--text-tertiary) !important;
+  opacity: 0.5;
+}
+
+/* 分页下拉选择框 */
+.el-select-dropdown {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  backdrop-filter: blur(20px);
+}
+
+.el-select-dropdown__item {
+  color: var(--text-primary) !important;
+  background: transparent !important;
+}
+
+.el-select-dropdown__item:hover {
+  background: rgba(0, 229, 255, 0.15) !important;
+  color: var(--primary-color) !important;
+}
+
+.el-select-dropdown__item.is-selected {
+  background: rgba(0, 229, 255, 0.25) !important;
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+.el-popper {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .glass-card {
+    border-radius: 12px;
+  }
+
+  .tech-title {
+    font-size: 18px;
+  }
+
+  .stat-card {
+    padding: 16px;
+  }
+
+  .stat-card .stat-value {
+    font-size: 24px;
+  }
+}
+
+/* ========== 额外动画效果 ========== */
+
+/* 页面进入动画 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* 数字跳动动画 */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.count-up {
+  animation: countUp 0.5s ease-out;
+}
+
+/* 呼吸灯效果 */
+@keyframes breathe {
+  0%, 100% {
+    box-shadow: var(--glow-primary);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(0, 229, 255, 0.8);
+  }
+}
+
+.breathe {
+  animation: breathe 2s ease-in-out infinite;
+}
+
+/* 滑入动画 */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease-out;
+}
+
+/* 脉冲动画 */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* 旋转加载动画 */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 1s linear infinite;
+}
+
+/* 文字发光动画 */
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px var(--primary-color);
+  }
+  50% {
+    text-shadow: 0 0 20px var(--primary-color), 0 0 30px var(--primary-color);
+  }
+}
+
+.text-glow {
+  animation: textGlow 2s ease-in-out infinite;
+}
+
+/* 边框流动动画 */
+@keyframes borderFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.border-flow {
+  position: relative;
+  overflow: hidden;
+}
+
+.border-flow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--primary-color),
+    transparent
+  );
+  animation: borderFlow 2s linear infinite;
+}
+
+/* 数据流动画（模拟数据刷新） */
+@keyframes dataFlow {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.data-flow {
+  animation: dataFlow 1.5s ease-in-out infinite;
+}
+
+/* 浮动动画 */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 粒子效果背景（CSS版） */
+@keyframes particleMove {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(100px);
+    opacity: 0;
+  }
+}
+
+.particle {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: particleMove 5s linear infinite;
+  opacity: 0;
+}
+
+/* 渐变文字效果 */
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% auto;
+  animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 鼠标跟随高亮效果 */
+.highlight-on-hover {
+  transition: all var(--transition-normal) ease;
+}
+
+.highlight-on-hover:hover {
+  background: rgba(0, 229, 255, 0.1);
+  transform: translateX(5px);
+  box-shadow: -5px 0 20px rgba(0, 229, 255, 0.3);
+}
+
+/* 卡片3D翻转效果 */
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* 波浪效果 */
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.wave {
+  animation: wave 2s ease-in-out infinite;
+}
+
+/* 打字机效果 */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 2s steps(40, end);
+}

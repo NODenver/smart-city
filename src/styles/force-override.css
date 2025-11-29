@@ -1,0 +1,129 @@
+/* 精确修复 - 清除白色背景和阴影问题 */
+
+/* 清除表格伪元素的白色边框 */
+.el-table::before,
+.el-table::after,
+.el-table__header::before,
+.el-table__header::after,
+.el-table__header-wrapper::before,
+.el-table__header-wrapper::after,
+.el-table__body-wrapper::before,
+.el-table__body-wrapper::after,
+.el-table__fixed::before,
+.el-table__fixed::after,
+.el-table__fixed-left::before,
+.el-table__fixed-left::after,
+.el-table__fixed-right::before,
+.el-table__fixed-right::after {
+  display: none !important;
+}
+
+/* 清除白色 box-shadow */
+.el-table,
+.el-table th,
+.el-table td,
+.el-tag,
+.el-button,
+.el-input__wrapper,
+.el-select .el-input__wrapper {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+}
+
+/* 确保表格边框为深色 */
+.el-table,
+.el-table th,
+.el-table td {
+  border-color: var(--glass-border) !important;
+}
+
+/* 清除默认白色背景图片 */
+.el-table,
+.el-table th,
+.el-table td,
+.el-tag,
+.el-button {
+  background-image: none !important;
+}
+
+/* 保护按钮颜色不被清除 */
+.el-button--primary {
+  background: var(--gradient-primary) !important;
+  border: none !important;
+}
+
+.el-button--success {
+  background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%) !important;
+  border: none !important;
+}
+
+.el-button--warning {
+  background: linear-gradient(135deg, #ffaa00 0%, #ff8800 100%) !important;
+  border: none !important;
+}
+
+.el-button--danger {
+  background: linear-gradient(135deg, #ff3366 0%, #cc0052 100%) !important;
+  border: none !important;
+}
+
+/* 保护默认按钮和标签颜色 */
+.el-tag.el-tag--success {
+  background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%) !important;
+  border: none !important;
+}
+
+.el-tag.el-tag--warning {
+  background: linear-gradient(135deg, #ffaa00 0%, #ff8800 100%) !important;
+  border: none !important;
+}
+
+.el-tag.el-tag--danger {
+  background: linear-gradient(135deg, #ff3366 0%, #cc0052 100%) !important;
+  border: none !important;
+}
+
+.el-tag.el-tag--info,
+.el-tag.el-tag--primary {
+  background: var(--gradient-primary) !important;
+  border: none !important;
+}
+
+/* 默认按钮保持透明 */
+.el-button:not(.el-button--primary):not(.el-button--success):not(.el-button--warning):not(.el-button--danger) {
+  background: transparent !important;
+  border: 1px solid var(--glass-border) !important;
+  color: var(--text-primary) !important;
+}
+
+/* 默认标签保持透明 */
+.el-tag:not(.el-tag--primary):not(.el-tag--success):not(.el-tag--warning):not(.el-tag--danger) {
+  background: transparent !important;
+  border: 1px solid var(--glass-border) !important;
+}
+
+/* 强制表头深色背景 */
+.el-table th.el-table__cell,
+.el-table__header th.el-table__cell {
+  background: rgba(0, 229, 255, 0.12) !important;
+  color: var(--text-primary) !important;
+}
+
+/* 强制表格单元格深色背景 */
+.el-table td.el-table__cell {
+  background: rgba(15, 23, 42, 0.8) !important;
+  color: var(--text-primary) !important;
+}
+
+/* 斑马纹行 */
+.el-table--striped .el-table__body tr.el-table__row--striped > td.el-table__cell {
+  background: rgba(15, 23, 42, 0.65) !important;
+}
+
+/* 悬停效果 */
+.el-table__body tr:hover > td.el-table__cell {
+  background: rgba(0, 229, 255, 0.25) !important;
+}

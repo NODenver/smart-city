@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npm run build-only)",
+      "Bash(npm run dev)",
+      "Bash(cp \"北京市.geojson\" \"D:\\workspace\\vue\\smart-city\\src\\assets\\maps\\北京.json\")",
+      "Bash(curl:*)",
+      "Bash(timeout:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(dir /s /b:*)",
+      "Bash(dir:*)",
+      "Bash(npx vue-tsc --noEmit)",
+      "Bash(npm install jspdf html2canvas)",
+      "Bash(git checkout:*)",
+      "mcp__playwright__browser_console_messages",
+      "mcp__playwright__browser_tabs"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
