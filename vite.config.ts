@@ -23,9 +23,18 @@ export default defineConfig({
         chunkFileNames: 'assets/js/[name]-[hash].js',
         entryFileNames: 'assets/js/[name]-[hash].js',
         assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
-        // 确保 ES 模块正确导出
-        format: 'es'
       },
     },
+    // 确保模块兼容性
+    target: 'es2020',
   },
+  // 确保模块格式正确
+  define: {
+    __VUE_OPTIONS_API__: false,
+    __VUE_PROD_DEVTOOLS__: false,
+  },
+  // 优化模块加载
+  esbuild: {
+    target: 'es2020'
+  }
 })
