@@ -1,4 +1,6 @@
 // AI分析服务 - 调用阿里云DashScope API
+import { getApiKey } from '../config/ai';
+
 export interface AIAnalysisRequest {
   events: any[];
   sensors: any[];
@@ -15,7 +17,7 @@ export interface AIAnalysisResponse {
  * 调用DashScope AI进行分析
  */
 export async function performAIAnalysis(request: AIAnalysisRequest): Promise<AIAnalysisResponse> {
-  const apiKey = import.meta.env.VITE_DASHSCOPE_API_KEY;
+  const apiKey = getApiKey();
 
   if (!apiKey) {
     throw new Error('请配置DASHSCOPE_API_KEY环境变量');

@@ -7,7 +7,7 @@
 
   /* 背景色变量 */
   --background-primary: #05070e;
-  --background-soft: rgba(15, 23, 42, 0.6);
+  --background-soft: rgba(15, 23, 42, 1);
   --background-mute: rgba(30, 41, 59, 0.5);
 
   /* 边框颜色 */

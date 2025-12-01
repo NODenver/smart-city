@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { getApiKey } from '../config/ai';
 
 export interface ChatMessage {
   id: string;
@@ -13,7 +14,7 @@ export class ChatAIService {
   private baseUrl = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
 
   constructor() {
-    this.apiKey = import.meta.env.VITE_DASHSCOPE_API_KEY || '';
+    this.apiKey = getApiKey();
   }
 
   async sendMessage(
