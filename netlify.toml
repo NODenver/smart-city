@@ -1,32 +1,26 @@
+# 构建配置
 [build]
-  publish = "dist"
-  command = "npm run build"
+  command = "npm run build" # 构建命令（yarn 则改 yarn build）
+  publish = "dist"          # 发布目录（对应 Vite 的 outDir）
 
-[build.environment]
-  NODE_VERSION = "22"
+# SPA 路由重写
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-    Content-Type = "application/javascript"
-
+# 强制指定 MIME 类型（解决识别异常）
 [[headers]]
   for = "/*.js"
   [headers.values]
     Content-Type = "application/javascript"
 
 [[headers]]
+  for = "/*.wasm"
+  [headers.values]
+    Content-Type = "application/wasm"
+
+[[headers]]
   for = "/*.css"
   [headers.values]
     Content-Type = "text/css"
-
-[[headers]]
-  for = "/*.html"
-  [headers.values]
-    Content-Type = "text/html"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
