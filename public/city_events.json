@@ -1,0 +1,1402 @@
+[
+  {
+    "id": "EV20251121081",
+    "type": "路灯故障",
+    "description": "西直门外大街路灯线路故障",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.92747434085641,
+      "lng": 116.32327615073989
+    },
+    "reportTime": "2025-11-20T22:27:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251121049",
+    "type": "道路积水",
+    "description": "八角北路路段积水严重，影响通行",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.948777951688186,
+      "lng": 116.22812960951943
+    },
+    "reportTime": "2025-11-21T02:36:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251121059",
+    "type": "垃圾堆积",
+    "description": "丰台路垃圾桶满溢",
+    "location": {
+      "district": "丰台区",
+      "street": "丰台路",
+      "lat": 39.8642563056353,
+      "lng": 116.32559649903027
+    },
+    "reportTime": "2025-11-21T04:01:00.000Z",
+    "reporterType": "市民APP",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251121053",
+    "type": "违停车辆",
+    "description": "复兴门内大街盲道被车辆占用",
+    "location": {
+      "district": "西城区",
+      "street": "复兴门内大街",
+      "lat": 39.930888470021756,
+      "lng": 116.30013566487102
+    },
+    "reportTime": "2025-11-21T04:18:00.000Z",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251121015",
+    "type": "占道经营",
+    "description": "石景山路违规设摊影响交通",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.904338332280034,
+      "lng": 116.21848569918721
+    },
+    "reportTime": "2025-11-21T09:33:00.000Z",
+    "reporterType": "视频监控",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251121079",
+    "type": "井盖缺失",
+    "description": "马家堡东路机动车道井盖丢失",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.85620038612676,
+      "lng": 116.30452438303229
+    },
+    "reportTime": "2025-11-21T11:23:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251121064",
+    "type": "噪音扰民",
+    "description": "西直门外大街附近夜间施工噪音",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.93034316368724,
+      "lng": 116.35110887803982
+    },
+    "reportTime": "2025-11-21T13:16:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251122095",
+    "type": "垃圾堆积",
+    "description": "中关村大街存在大量生活垃圾",
+    "location": {
+      "district": "海淀区",
+      "street": "中关村大街",
+      "lat": 39.961895075882985,
+      "lng": 116.31522784069358
+    },
+    "reportTime": "2025-11-21T16:24:00.000Z",
+    "reporterType": "市民APP",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251122006",
+    "type": "路灯故障",
+    "description": "西直门外大街沿线多盏路灯不亮",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.924263198516776,
+      "lng": 116.31823962643541
+    },
+    "reportTime": "2025-11-21T22:40:00.000Z",
+    "reporterType": "网格员",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251122096",
+    "type": "树倒折枝",
+    "description": "八角北路树枝折断掉落",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.91891017321864,
+      "lng": 116.204664087069
+    },
+    "reportTime": "2025-11-21T23:28:00.000Z",
+    "reporterType": "12345热线",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251122045",
+    "type": "井盖缺失",
+    "description": "西直门外大街机动车道井盖丢失",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.94561556420964,
+      "lng": 116.31871522322596
+    },
+    "reportTime": "2025-11-22T01:38:00.000Z",
+    "reporterType": "网格员",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251122025",
+    "type": "垃圾堆积",
+    "description": "丰台路存在大量生活垃圾",
+    "location": {
+      "district": "丰台区",
+      "street": "丰台路",
+      "lat": 39.86621824596389,
+      "lng": 116.31561805298492
+    },
+    "reportTime": "2025-11-22T02:41:00.000Z",
+    "reporterType": "市民APP",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251122052",
+    "type": "噪音扰民",
+    "description": "西直门外大街附近夜间施工噪音",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.928207476784515,
+      "lng": 116.36692496779929
+    },
+    "reportTime": "2025-11-22T05:44:00.000Z",
+    "reporterType": "网格员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251122013",
+    "type": "噪音扰民",
+    "description": "建国路附近夜间施工噪音",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路",
+      "lat": 39.94642244510121,
+      "lng": 116.45973498223377
+    },
+    "reportTime": "2025-11-22T10:01:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251122024",
+    "type": "道路积水",
+    "description": "王府井大街路段积水严重，影响通行",
+    "location": {
+      "district": "东城区",
+      "street": "王府井大街",
+      "lat": 39.903534198607296,
+      "lng": 116.41308921934356
+    },
+    "reportTime": "2025-11-22T10:26:00.000Z",
+    "reporterType": "市民APP",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251122031",
+    "type": "井盖缺失",
+    "description": "石景山路机动车道井盖丢失",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.91549083088528,
+      "lng": 116.21612786932529
+    },
+    "reportTime": "2025-11-22T11:00:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251122014",
+    "type": "道路积水",
+    "description": "西直门外大街低洼地带雨水积聚",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.94740360405854,
+      "lng": 116.31451582292759
+    },
+    "reportTime": "2025-11-22T11:15:00.000Z",
+    "reporterType": "市民APP",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251122043",
+    "type": "树倒折枝",
+    "description": "丰台路树木倾斜存在隐患",
+    "location": {
+      "district": "丰台区",
+      "street": "丰台路",
+      "lat": 39.88958314352601,
+      "lng": 116.2603944560274
+    },
+    "reportTime": "2025-11-22T14:17:00.000Z",
+    "reporterType": "网格员",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251122058",
+    "type": "垃圾堆积",
+    "description": "石景山路垃圾桶满溢",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.90035278276496,
+      "lng": 116.22994569489934
+    },
+    "reportTime": "2025-11-22T14:19:00.000Z",
+    "reporterType": "12345热线",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251123061",
+    "type": "垃圾堆积",
+    "description": "马家堡东路垃圾桶满溢",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.88113651700443,
+      "lng": 116.31622151573632
+    },
+    "reportTime": "2025-11-22T21:15:00.000Z",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251123042",
+    "type": "噪音扰民",
+    "description": "西单北大街附近夜间施工噪音",
+    "location": {
+      "district": "西城区",
+      "street": "西单北大街",
+      "lat": 39.949227996225446,
+      "lng": 116.31737164198387
+    },
+    "reportTime": "2025-11-22T22:47:00.000Z",
+    "reporterType": "网格员",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251123097",
+    "type": "噪音扰民",
+    "description": "建国路商户噪音扰民",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路",
+      "lat": 39.93528636242658,
+      "lng": 116.47202965570195
+    },
+    "reportTime": "2025-11-22T22:57:00.000Z",
+    "reporterType": "网格员",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251123075",
+    "type": "噪音扰民",
+    "description": "崇文门外大街交通噪音过大",
+    "location": {
+      "district": "东城区",
+      "street": "崇文门外大街",
+      "lat": 39.909288201315796,
+      "lng": 116.40105138001026
+    },
+    "reportTime": "2025-11-22T23:18:00.000Z",
+    "reporterType": "网格员",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251123003",
+    "type": "树倒折枝",
+    "description": "王府井大街行道树倒伏",
+    "location": {
+      "district": "东城区",
+      "street": "王府井大街",
+      "lat": 39.90141353140888,
+      "lng": 116.41393093283644
+    },
+    "reportTime": "2025-11-23T01:00:00.000Z",
+    "reporterType": "市民APP",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251123023",
+    "type": "井盖缺失",
+    "description": "东长安街人行道井盖缺失",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.906860764751045,
+      "lng": 116.40966396667221
+    },
+    "reportTime": "2025-11-23T02:22:00.000Z",
+    "reporterType": "12345热线",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251123080",
+    "type": "占道经营",
+    "description": "石景山路商铺外摆经营",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.91796117142863,
+      "lng": 116.2164098660968
+    },
+    "reportTime": "2025-11-23T02:29:00.000Z",
+    "reporterType": "视频监控",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251123071",
+    "type": "占道经营",
+    "description": "知春路存在流动摊贩占道",
+    "location": {
+      "district": "海淀区",
+      "street": "知春路",
+      "lat": 39.96857366754514,
+      "lng": 116.33285281013897
+    },
+    "reportTime": "2025-11-23T08:04:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251123092",
+    "type": "道路积水",
+    "description": "东长安街路段积水严重，影响通行",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.91070802137702,
+      "lng": 116.41615753964666
+    },
+    "reportTime": "2025-11-23T08:11:00.000Z",
+    "reporterType": "网格员",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251123002",
+    "type": "路灯故障",
+    "description": "三里屯路路灯灯泡损坏",
+    "location": {
+      "district": "朝阳区",
+      "street": "三里屯路",
+      "lat": 39.907452756856316,
+      "lng": 116.41685180455686
+    },
+    "reportTime": "2025-11-23T13:53:00.000Z",
+    "reporterType": "网格员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251124048",
+    "type": "垃圾堆积",
+    "description": "建国路垃圾清运不及时",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路",
+      "lat": 39.9410206913597,
+      "lng": 116.4617672246351
+    },
+    "reportTime": "2025-11-23T16:13:00.000Z",
+    "reporterType": "视频监控",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251124089",
+    "type": "路灯故障",
+    "description": "工体北路路灯线路故障",
+    "location": {
+      "district": "朝阳区",
+      "street": "工体北路",
+      "lat": 39.94331910738108,
+      "lng": 116.43811918791515
+    },
+    "reportTime": "2025-11-23T16:24:00.000Z",
+    "reporterType": "12345热线",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251124069",
+    "type": "路灯故障",
+    "description": "东长安街沿线多盏路灯不亮",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.908008441855635,
+      "lng": 116.41611901733648
+    },
+    "reportTime": "2025-11-23T17:49:00.000Z",
+    "reporterType": "市民APP",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251124010",
+    "type": "噪音扰民",
+    "description": "学院路交通噪音过大",
+    "location": {
+      "district": "海淀区",
+      "street": "学院路",
+      "lat": 39.95605759526882,
+      "lng": 116.30327405163081
+    },
+    "reportTime": "2025-11-23T18:26:00.000Z",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251124020",
+    "type": "垃圾堆积",
+    "description": "西单北大街存在大量生活垃圾",
+    "location": {
+      "district": "西城区",
+      "street": "西单北大街",
+      "lat": 39.93750266842739,
+      "lng": 116.34555229360073
+    },
+    "reportTime": "2025-11-23T20:36:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251124007",
+    "type": "违停车辆",
+    "description": "马家堡东路盲道被车辆占用",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.87135605395673,
+      "lng": 116.31162116960127
+    },
+    "reportTime": "2025-11-23T22:32:00.000Z",
+    "reporterType": "12345热线",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251124011",
+    "type": "噪音扰民",
+    "description": "西直门外大街交通噪音过大",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.948712418001016,
+      "lng": 116.34986283767894
+    },
+    "reportTime": "2025-11-23T23:59:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251124062",
+    "type": "路灯故障",
+    "description": "复兴门内大街路灯灯泡损坏",
+    "location": {
+      "district": "西城区",
+      "street": "复兴门内大街",
+      "lat": 39.9462718933392,
+      "lng": 116.33812979164215
+    },
+    "reportTime": "2025-11-24T03:59:00.000Z",
+    "reporterType": "视频监控",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251124090",
+    "type": "违停车辆",
+    "description": "丰台路有车辆违停",
+    "location": {
+      "district": "丰台区",
+      "street": "丰台路",
+      "lat": 39.86680773763941,
+      "lng": 116.34599488582967
+    },
+    "reportTime": "2025-11-24T04:10:00.000Z",
+    "reporterType": "视频监控",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251124032",
+    "type": "占道经营",
+    "description": "海淀大街存在流动摊贩占道",
+    "location": {
+      "district": "海淀区",
+      "street": "海淀大街",
+      "lat": 39.98503176398124,
+      "lng": 116.34996068678886
+    },
+    "reportTime": "2025-11-24T09:07:00.000Z",
+    "reporterType": "网格员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251124018",
+    "type": "路灯故障",
+    "description": "中关村大街路灯灯泡损坏",
+    "location": {
+      "district": "海淀区",
+      "street": "中关村大街",
+      "lat": 39.985117567318795,
+      "lng": 116.3088230262587
+    },
+    "reportTime": "2025-11-24T10:07:00.000Z",
+    "reporterType": "市民APP",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251124060",
+    "type": "违停车辆",
+    "description": "崇文门外大街有车辆违停",
+    "location": {
+      "district": "东城区",
+      "street": "崇文门外大街",
+      "lat": 39.91662094896657,
+      "lng": 116.41031996362655
+    },
+    "reportTime": "2025-11-24T10:43:00.000Z",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251124051",
+    "type": "井盖缺失",
+    "description": "复兴门内大街人行道井盖缺失",
+    "location": {
+      "district": "西城区",
+      "street": "复兴门内大街",
+      "lat": 39.93503687312217,
+      "lng": 116.33469168942767
+    },
+    "reportTime": "2025-11-24T15:55:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251124099",
+    "type": "道路积水",
+    "description": "工体北路低洼地带雨水积聚",
+    "location": {
+      "district": "朝阳区",
+      "street": "工体北路",
+      "lat": 39.935876654023524,
+      "lng": 116.45212129080588
+    },
+    "reportTime": "2025-11-24T15:59:00.000Z",
+    "reporterType": "视频监控",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251125001",
+    "type": "违停车辆",
+    "description": "丰台路盲道被车辆占用",
+    "location": {
+      "district": "丰台区",
+      "street": "丰台路",
+      "lat": 39.86217034593649,
+      "lng": 116.28401324365613
+    },
+    "reportTime": "2025-11-24T19:45:00.000Z",
+    "reporterType": "视频监控",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251125098",
+    "type": "垃圾堆积",
+    "description": "八角北路存在大量生活垃圾",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.922992188700505,
+      "lng": 116.21152949322146
+    },
+    "reportTime": "2025-11-24T19:54:00.000Z",
+    "reporterType": "视频监控",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251125030",
+    "type": "道路积水",
+    "description": "东长安街低洼地带雨水积聚",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.91210194629498,
+      "lng": 116.40044835156668
+    },
+    "reportTime": "2025-11-24T23:26:00.000Z",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251125041",
+    "type": "井盖缺失",
+    "description": "望京街井盖破损需要更换",
+    "location": {
+      "district": "朝阳区",
+      "street": "望京街",
+      "lat": 39.90003014460111,
+      "lng": 116.46082810423742
+    },
+    "reportTime": "2025-11-24T23:44:00.000Z",
+    "reporterType": "网格员",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251125072",
+    "type": "路灯故障",
+    "description": "西直门外大街沿线多盏路灯不亮",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.92496217816022,
+      "lng": 116.31758191243864
+    },
+    "reportTime": "2025-11-24T23:59:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251125036",
+    "type": "占道经营",
+    "description": "马家堡东路存在流动摊贩占道",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.87304070726674,
+      "lng": 116.30163854081856
+    },
+    "reportTime": "2025-11-25T02:28:00.000Z",
+    "reporterType": "网格员",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251125050",
+    "type": "井盖缺失",
+    "description": "八角北路井盖破损需要更换",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.942686382952154,
+      "lng": 116.21015073265174
+    },
+    "reportTime": "2025-11-25T02:48:00.000Z",
+    "reporterType": "视频监控",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251125074",
+    "type": "噪音扰民",
+    "description": "东长安街附近夜间施工噪音",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.91004335874084,
+      "lng": 116.40740349014597
+    },
+    "reportTime": "2025-11-25T03:26:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251125086",
+    "type": "井盖缺失",
+    "description": "崇文门外大街机动车道井盖丢失",
+    "location": {
+      "district": "东城区",
+      "street": "崇文门外大街",
+      "lat": 39.911161157799924,
+      "lng": 116.40850130684687
+    },
+    "reportTime": "2025-11-25T08:01:00.000Z",
+    "reporterType": "12345热线",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251125021",
+    "type": "井盖缺失",
+    "description": "西直门外大街井盖破损需要更换",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.93069582033729,
+      "lng": 116.33297259012087
+    },
+    "reportTime": "2025-11-25T08:35:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251125037",
+    "type": "树倒折枝",
+    "description": "建国路树枝折断掉落",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路",
+      "lat": 39.93674236831425,
+      "lng": 116.43860804708495
+    },
+    "reportTime": "2025-11-25T08:38:00.000Z",
+    "reporterType": "市民APP",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251125067",
+    "type": "道路积水",
+    "description": "王府井大街与周边道路交叉口积水较深",
+    "location": {
+      "district": "东城区",
+      "street": "王府井大街",
+      "lat": 39.905796293338035,
+      "lng": 116.40689392192797
+    },
+    "reportTime": "2025-11-25T09:34:00.000Z",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251125085",
+    "type": "井盖缺失",
+    "description": "马家堡东路井盖破损需要更换",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.876083019357004,
+      "lng": 116.34403837385291
+    },
+    "reportTime": "2025-11-25T11:00:00.000Z",
+    "reporterType": "网格员",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251125016",
+    "type": "垃圾堆积",
+    "description": "丰台路垃圾桶满溢",
+    "location": {
+      "district": "丰台区",
+      "street": "丰台路",
+      "lat": 39.85670504613412,
+      "lng": 116.25759842703376
+    },
+    "reportTime": "2025-11-25T12:15:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251125046",
+    "type": "路灯故障",
+    "description": "东长安街路灯线路故障",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.90429059893093,
+      "lng": 116.40163278935067
+    },
+    "reportTime": "2025-11-25T14:47:00.000Z",
+    "reporterType": "网格员",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251125047",
+    "type": "井盖缺失",
+    "description": "复兴门内大街井盖破损需要更换",
+    "location": {
+      "district": "西城区",
+      "street": "复兴门内大街",
+      "lat": 39.92906350799957,
+      "lng": 116.36863741420855
+    },
+    "reportTime": "2025-11-25T15:02:00.000Z",
+    "reporterType": "视频监控",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251125066",
+    "type": "道路积水",
+    "description": "王府井大街路段积水严重，影响通行",
+    "location": {
+      "district": "东城区",
+      "street": "王府井大街",
+      "lat": 39.90342688313044,
+      "lng": 116.41223820820998
+    },
+    "reportTime": "2025-11-25T15:58:00.000Z",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251126057",
+    "type": "道路积水",
+    "description": "海淀大街路段积水严重，影响通行",
+    "location": {
+      "district": "海淀区",
+      "street": "海淀大街",
+      "lat": 39.975539860470505,
+      "lng": 116.31117939180795
+    },
+    "reportTime": "2025-11-25T16:00:00.000Z",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251126004",
+    "type": "树倒折枝",
+    "description": "马家堡东路树枝折断掉落",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.89923373975163,
+      "lng": 116.27653573484204
+    },
+    "reportTime": "2025-11-25T18:21:00.000Z",
+    "reporterType": "网格员",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251126038",
+    "type": "垃圾堆积",
+    "description": "东长安街垃圾清运不及时",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.912451154651585,
+      "lng": 116.40191899015088
+    },
+    "reportTime": "2025-11-25T19:03:00.000Z",
+    "reporterType": "视频监控",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251126040",
+    "type": "违停车辆",
+    "description": "八角北路盲道被车辆占用",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.93221051059814,
+      "lng": 116.2175205364566
+    },
+    "reportTime": "2025-11-25T19:35:00.000Z",
+    "reporterType": "市民APP",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251126033",
+    "type": "噪音扰民",
+    "description": "复兴门内大街交通噪音过大",
+    "location": {
+      "district": "西城区",
+      "street": "复兴门内大街",
+      "lat": 39.94935390383435,
+      "lng": 116.35285737523057
+    },
+    "reportTime": "2025-11-25T20:27:00.000Z",
+    "reporterType": "视频监控",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251126056",
+    "type": "违停车辆",
+    "description": "西直门外大街有车辆违停",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.944652399011545,
+      "lng": 116.3247343994209
+    },
+    "reportTime": "2025-11-25T20:40:00.000Z",
+    "reporterType": "网格员",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251126017",
+    "type": "垃圾堆积",
+    "description": "三里屯路垃圾清运不及时",
+    "location": {
+      "district": "朝阳区",
+      "street": "三里屯路",
+      "lat": 39.92874460459444,
+      "lng": 116.49730455244571
+    },
+    "reportTime": "2025-11-26T00:54:00.000Z",
+    "reporterType": "12345热线",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251126076",
+    "type": "占道经营",
+    "description": "三里屯路商铺外摆经营",
+    "location": {
+      "district": "朝阳区",
+      "street": "三里屯路",
+      "lat": 39.9346109418372,
+      "lng": 116.41175501641247
+    },
+    "reportTime": "2025-11-26T01:32:00.000Z",
+    "reporterType": "市民APP",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251126027",
+    "type": "占道经营",
+    "description": "东长安街存在流动摊贩占道",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.9152758396964,
+      "lng": 116.41242295810167
+    },
+    "reportTime": "2025-11-26T04:21:00.000Z",
+    "reporterType": "12345热线",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251126078",
+    "type": "道路积水",
+    "description": "望京街与周边道路交叉口积水较深",
+    "location": {
+      "district": "朝阳区",
+      "street": "望京街",
+      "lat": 39.9085457843091,
+      "lng": 116.43090419869982
+    },
+    "reportTime": "2025-11-26T04:55:00.000Z",
+    "reporterType": "12345热线",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251126082",
+    "type": "噪音扰民",
+    "description": "石景山路附近夜间施工噪音",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.936496502041805,
+      "lng": 116.24894116719314
+    },
+    "reportTime": "2025-11-26T05:19:00.000Z",
+    "reporterType": "视频监控",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251126034",
+    "type": "树倒折枝",
+    "description": "建国路树枝折断掉落",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路",
+      "lat": 39.94976616699595,
+      "lng": 116.42653148031893
+    },
+    "reportTime": "2025-11-26T06:57:00.000Z",
+    "reporterType": "12345热线",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251126091",
+    "type": "道路积水",
+    "description": "八角北路低洼地带雨水积聚",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.908791770831805,
+      "lng": 116.23415806446273
+    },
+    "reportTime": "2025-11-26T10:33:00.000Z",
+    "reporterType": "视频监控",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251126029",
+    "type": "道路积水",
+    "description": "学院路与周边道路交叉口积水较深",
+    "location": {
+      "district": "海淀区",
+      "street": "学院路",
+      "lat": 39.97792643240593,
+      "lng": 116.30152808537596
+    },
+    "reportTime": "2025-11-26T12:47:00.000Z",
+    "reporterType": "市民APP",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251126026",
+    "type": "占道经营",
+    "description": "西单北大街存在流动摊贩占道",
+    "location": {
+      "district": "西城区",
+      "street": "西单北大街",
+      "lat": 39.92683665799819,
+      "lng": 116.31444937972043
+    },
+    "reportTime": "2025-11-26T15:06:00.000Z",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251126070",
+    "type": "噪音扰民",
+    "description": "复兴门内大街商户噪音扰民",
+    "location": {
+      "district": "西城区",
+      "street": "复兴门内大街",
+      "lat": 39.93559048718478,
+      "lng": 116.36981136032821
+    },
+    "reportTime": "2025-11-26T15:50:00.000Z",
+    "reporterType": "视频监控",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251127022",
+    "type": "井盖缺失",
+    "description": "西直门外大街人行道井盖缺失",
+    "location": {
+      "district": "西城区",
+      "street": "西直门外大街",
+      "lat": 39.937468510409026,
+      "lng": 116.32059762574835
+    },
+    "reportTime": "2025-11-26T18:13:00.000Z",
+    "reporterType": "视频监控",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251127063",
+    "type": "路灯故障",
+    "description": "中关村大街沿线多盏路灯不亮",
+    "location": {
+      "district": "海淀区",
+      "street": "中关村大街",
+      "lat": 39.99502755039853,
+      "lng": 116.328584881708
+    },
+    "reportTime": "2025-11-26T21:39:00.000Z",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251127088",
+    "type": "占道经营",
+    "description": "马家堡东路商铺外摆经营",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.86591740378636,
+      "lng": 116.30189788750643
+    },
+    "reportTime": "2025-11-26T21:53:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251127087",
+    "type": "路灯故障",
+    "description": "东长安街路灯灯泡损坏",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.90038455913809,
+      "lng": 116.41874660263535
+    },
+    "reportTime": "2025-11-26T23:10:00.000Z",
+    "reporterType": "12345热线",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251127012",
+    "type": "树倒折枝",
+    "description": "复兴门内大街树木倾斜存在隐患",
+    "location": {
+      "district": "西城区",
+      "street": "复兴门内大街",
+      "lat": 39.92898742287239,
+      "lng": 116.33463328504841
+    },
+    "reportTime": "2025-11-26T23:55:00.000Z",
+    "reporterType": "市民APP",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251127055",
+    "type": "噪音扰民",
+    "description": "崇文门外大街交通噪音过大",
+    "location": {
+      "district": "东城区",
+      "street": "崇文门外大街",
+      "lat": 39.91647339347404,
+      "lng": 116.40306151867206
+    },
+    "reportTime": "2025-11-27T00:08:00.000Z",
+    "reporterType": "12345热线",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251127100",
+    "type": "违停车辆",
+    "description": "马家堡东路机动车道违停",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.850132300646834,
+      "lng": 116.34759685215975
+    },
+    "reportTime": "2025-11-27T04:59:00.000Z",
+    "reporterType": "12345热线",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251127054",
+    "type": "噪音扰民",
+    "description": "三里屯路商户噪音扰民",
+    "location": {
+      "district": "朝阳区",
+      "street": "三里屯路",
+      "lat": 39.90009243994848,
+      "lng": 116.47665831729984
+    },
+    "reportTime": "2025-11-27T06:37:00.000Z",
+    "reporterType": "网格员",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251127009",
+    "type": "道路积水",
+    "description": "马家堡东路与周边道路交叉口积水较深",
+    "location": {
+      "district": "丰台区",
+      "street": "马家堡东路",
+      "lat": 39.85336170841134,
+      "lng": 116.2713666711169
+    },
+    "reportTime": "2025-11-27T07:24:00.000Z",
+    "reporterType": "市民APP",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251127093",
+    "type": "垃圾堆积",
+    "description": "东长安街垃圾桶满溢",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.909905043021645,
+      "lng": 116.41327058467496
+    },
+    "reportTime": "2025-11-27T09:08:00.000Z",
+    "reporterType": "网格员",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251127019",
+    "type": "垃圾堆积",
+    "description": "丰台路垃圾清运不及时",
+    "location": {
+      "district": "丰台区",
+      "street": "丰台路",
+      "lat": 39.89745418745921,
+      "lng": 116.2876822069812
+    },
+    "reportTime": "2025-11-27T14:16:00.000Z",
+    "reporterType": "视频监控",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251127094",
+    "type": "噪音扰民",
+    "description": "中关村大街交通噪音过大",
+    "location": {
+      "district": "海淀区",
+      "street": "中关村大街",
+      "lat": 39.969872648480745,
+      "lng": 116.33226689768509
+    },
+    "reportTime": "2025-11-27T15:34:00.000Z",
+    "reporterType": "市民APP",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251127008",
+    "type": "井盖缺失",
+    "description": "石景山路机动车道井盖丢失",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.935455771686804,
+      "lng": 116.2307984426997
+    },
+    "reportTime": "2025-11-27T15:43:00.000Z",
+    "reporterType": "12345热线",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251127068",
+    "type": "道路积水",
+    "description": "海淀大街与周边道路交叉口积水较深",
+    "location": {
+      "district": "海淀区",
+      "street": "海淀大街",
+      "lat": 39.951058796879074,
+      "lng": 116.33977767641346
+    },
+    "reportTime": "2025-11-27T15:50:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251128044",
+    "type": "违停车辆",
+    "description": "建国路有车辆违停",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路",
+      "lat": 39.94629801217859,
+      "lng": 116.46614640250803
+    },
+    "reportTime": "2025-11-27T16:15:00.000Z",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251128084",
+    "type": "树倒折枝",
+    "description": "崇文门外大街行道树倒伏",
+    "location": {
+      "district": "东城区",
+      "street": "崇文门外大街",
+      "lat": 39.91495737481764,
+      "lng": 116.41167478331236
+    },
+    "reportTime": "2025-11-27T18:10:00.000Z",
+    "reporterType": "12345热线",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251128005",
+    "type": "道路积水",
+    "description": "中关村大街路段积水严重，影响通行",
+    "location": {
+      "district": "海淀区",
+      "street": "中关村大街",
+      "lat": 39.96266048633342,
+      "lng": 116.32660891270108
+    },
+    "reportTime": "2025-11-27T19:24:00.000Z",
+    "reporterType": "12345热线",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251128065",
+    "type": "噪音扰民",
+    "description": "八角北路附近夜间施工噪音",
+    "location": {
+      "district": "石景山",
+      "street": "八角北路",
+      "lat": 39.9016672549537,
+      "lng": 116.22861214588318
+    },
+    "reportTime": "2025-11-27T21:52:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251128073",
+    "type": "树倒折枝",
+    "description": "学院路行道树倒伏",
+    "location": {
+      "district": "海淀区",
+      "street": "学院路",
+      "lat": 39.99641500345368,
+      "lng": 116.31937023226877
+    },
+    "reportTime": "2025-11-28T00:42:00.000Z",
+    "reporterType": "网格员",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251128028",
+    "type": "垃圾堆积",
+    "description": "中关村大街存在大量生活垃圾",
+    "location": {
+      "district": "海淀区",
+      "street": "中关村大街",
+      "lat": 39.96210311928525,
+      "lng": 116.33548416583112
+    },
+    "reportTime": "2025-11-28T01:54:00.000Z",
+    "reporterType": "城管巡查",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251128035",
+    "type": "路灯故障",
+    "description": "东长安街路灯线路故障",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.913748964138975,
+      "lng": 116.41564058488184
+    },
+    "reportTime": "2025-11-28T07:32:00.000Z",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251128077",
+    "type": "垃圾堆积",
+    "description": "望京街垃圾桶满溢",
+    "location": {
+      "district": "朝阳区",
+      "street": "望京街",
+      "lat": 39.93718999626169,
+      "lng": 116.49494038904987
+    },
+    "reportTime": "2025-11-28T12:52:00.000Z",
+    "reporterType": "网格员",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251128083",
+    "type": "垃圾堆积",
+    "description": "海淀大街垃圾清运不及时",
+    "location": {
+      "district": "海淀区",
+      "street": "海淀大街",
+      "lat": 39.989136307114535,
+      "lng": 116.31821728097272
+    },
+    "reportTime": "2025-11-28T14:02:00.000Z",
+    "reporterType": "视频监控",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251128039",
+    "type": "占道经营",
+    "description": "石景山路存在流动摊贩占道",
+    "location": {
+      "district": "石景山",
+      "street": "石景山路",
+      "lat": 39.90573219881715,
+      "lng": 116.22760043037279
+    },
+    "reportTime": "2025-11-28T15:14:00.000Z",
+    "reporterType": "视频监控",
+    "status": "处理中"
+  }
+]

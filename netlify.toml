@@ -1,7 +1,7 @@
 # 构建配置
 [build]
-  command = "npm run build" # 构建命令（yarn 则改 yarn build）
-  publish = "dist"          # 发布目录（对应 Vite 的 outDir）
+  command = "npm run build" # 构建命令
+  publish = "dist"          # 发布目录
 
 # SPA 路由重写
 [[redirects]]
@@ -9,18 +9,46 @@
   to = "/index.html"
   status = 200
 
-# 强制指定 MIME 类型（解决识别异常）
+# MIME 类型配置 - 解决模块脚本识别问题
 [[headers]]
-  for = "/*.js"
+  for = "/assets/js/*"
   [headers.values]
-    Content-Type = "application/javascript"
+    Content-Type = "application/javascript; charset=utf-8"
+    Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/*.wasm"
+  for = "/assets/css/*"
+  [headers.values]
+    Content-Type = "text/css; charset=utf-8"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Content-Type = "application/javascript; charset=utf-8"
+
+[[headers]]
+  for = "*.mjs"
+  [headers.values]
+    Content-Type = "application/javascript; charset=utf-8"
+
+[[headers]]
+  for = "*.wasm"
   [headers.values]
     Content-Type = "application/wasm"
 
 [[headers]]
-  for = "/*.css"
+  for = "*.css"
   [headers.values]
-    Content-Type = "text/css"
+    Content-Type = "text/css; charset=utf-8"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# 启用压缩
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Content-Encoding = "gzip"

@@ -133,12 +133,12 @@ function getStatusType(status: string) {
 onMounted(() => {
   if (dataStore.cityEvents.length === 0) {
     // 自动加载示例数据
-    fetch('/city_events.json')
+    fetch('./city_events.json')
       .then(res => res.json())
       .then((data: any) => {
         dataStore.loadCityEvents(data);
       });
-    fetch('/sensor_data.json')
+    fetch('./sensor_data.json')
       .then(res => res.json())
       .then((data: any) => {
         dataStore.loadSensorData(data);

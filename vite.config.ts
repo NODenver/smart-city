@@ -13,17 +13,18 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  // 部署根域名填 '/'，子路径（如 https://xxx.netlify.app/my-project/）填 '/my-project/'
-  base: '/', 
+  base: './',
   build: {
-    outDir: 'dist', // 输出目录（Netlify 需指向此目录）
-    emptyOutDir: true, // 构建前清空旧文件
+    outDir: 'dist',
+    emptyOutDir: true,
+    assetsDir: 'assets',
     rollupOptions: {
-      // 确保输出文件路径规范，避免扩展名解析错误
       output: {
         chunkFileNames: 'assets/js/[name]-[hash].js',
         entryFileNames: 'assets/js/[name]-[hash].js',
         assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
+        // 确保 ES 模块正确导出
+        format: 'es'
       },
     },
   },

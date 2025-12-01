@@ -219,7 +219,7 @@ function readFileContent(file: File): Promise<string> {
 }
 
 function loadSampleData() {
-  fetch('/city_events.json')
+  fetch('./city_events.json')
     .then(res => res.json())
     .then((data: CityEvent[]) => {
       dataStore.loadCityEvents(data);
@@ -230,7 +230,7 @@ function loadSampleData() {
       ElMessage.error('加载示例数据失败');
     });
 
-  fetch('/sensor_data.json')
+  fetch('./sensor_data.json')
     .then(res => res.json())
     .then((data: SensorData[]) => {
       dataStore.loadSensorData(data);
